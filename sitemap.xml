@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://weifo.github.io/2019/11/14/deepclone/</loc>
+    
+    <lastmod>2019-11-30T03:20:56.728Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://weifo.github.io/2019/11/14/ts_basic/</loc>
+    
+    <lastmod>2019-11-18T08:04:06.881Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://weifo.github.io/2019/11/11/first/</loc>
     
-    <lastmod>2019-11-11T16:53:50.029Z</lastmod>
+    <lastmod>2019-11-14T15:01:26.003Z</lastmod>
     
   </url>
   
@@ -37,14 +51,14 @@
   </url>
   
   <url>
-    <loc>https://weifo.github.io/tags/index.html</loc>
+    <loc>https://weifo.github.io/repository/index.html</loc>
     
     <lastmod>2019-03-18T15:39:40.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://weifo.github.io/repository/index.html</loc>
+    <loc>https://weifo.github.io/tags/index.html</loc>
     
     <lastmod>2019-03-18T15:39:40.000Z</lastmod>
     

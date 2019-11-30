@@ -4,8 +4,48 @@
 
     
   <url>
+    <loc>https://weifo.github.io/2019/11/14/deepclone/</loc>
+    <lastmod>2019-11-30T03:20:56.728Z</lastmod>
+    <data>
+        <display>
+        <title>包学不会的深拷贝与浅拷贝</title>
+        <pubTime>2019-11-14T14:13:05.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端开发" url="https://weifo.github.io/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://weifo.github.io/2019/11/14/ts_basic/</loc>
+    <lastmod>2019-11-18T08:04:06.881Z</lastmod>
+    <data>
+        <display>
+        <title>五分钟了解(安装)typescript</title>
+        <pubTime>2019-11-14T15:05:08.000Z</pubTime>
+        
+        <tag>前端</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="https://weifo.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://weifo.github.io/2019/11/11/first/</loc>
-    <lastmod>2019-11-11T16:53:50.029Z</lastmod>
+    <lastmod>2019-11-14T15:01:26.003Z</lastmod>
     <data>
         <display>
         <title>总得走出第一步吧！</title>
