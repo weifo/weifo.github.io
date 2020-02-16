@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="weifo">
 <meta property="og:description" content="深拷贝与浅拷贝的含义首先要知道在js的世界中，有两种类型的值，分别是基础类型和引用类型。基础类型包括string,number,boolean,Symbol,undefined,null,引用类型包括array,object等。  基本数据类型：直接存储在栈（stack）中的数据 引用数据类型：在栈中存放的是指针，真实的数据存放在堆中。  首先要分清拷贝和赋值的区别引用类型的赋值是直接赋值了一个指">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-30T03:20:56.728Z">
+<meta property="og:updated_time" content="2019-11-30T05:40:26.649Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="包学不会的深拷贝与浅拷贝">
 <meta name="twitter:description" content="深拷贝与浅拷贝的含义首先要知道在js的世界中，有两种类型的值，分别是基础类型和引用类型。基础类型包括string,number,boolean,Symbol,undefined,null,引用类型包括array,object等。  基本数据类型：直接存储在栈（stack）中的数据 引用数据类型：在栈中存放的是指针，真实的数据存放在堆中。  首先要分清拷贝和赋值的区别引用类型的赋值是直接赋值了一个指">
@@ -417,7 +417,7 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> obj=&#123;<span class="attr">name</span>:<span class="string">'weifo'</span>,<span class="attr">skill</span>:[<span class="string">'english'</span>,<span class="string">'code'</span>]&#125;;</span><br><span class="line"><span class="keyword">let</span> copyobj=&#123;...obj,<span class="attr">name</span>:<span class="string">'fred'</span>&#125;;<span class="comment">//&#123;name:'fred',skill:[...]&#125;</span></span><br><span class="line"><span class="comment">//es6语法</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h4 id="深拷贝的实现"><a href="#深拷贝的实现" class="headerlink" title="深拷贝的实现"></a>深拷贝的实现</h4><ul>
+<h2 id="深拷贝的实现"><a href="#深拷贝的实现" class="headerlink" title="深拷贝的实现"></a>深拷贝的实现</h2><ul>
 <li><p>trick版</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">JSON</span>.parse(<span class="built_in">JSON</span>.stringify(obj))</span><br><span class="line"><span class="comment">// 该方法的局限性：symbol，undefined，函数的属性值会被忽略，例子如下</span></span><br><span class="line"><span class="keyword">let</span> syb=<span class="built_in">Symbol</span>(<span class="number">12</span>);</span><br><span class="line"><span class="keyword">let</span> obj=&#123;</span><br><span class="line">    name:<span class="string">'fred'</span>,</span><br><span class="line">    say:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        alert(<span class="string">'It wont alert'</span>);</span><br><span class="line">    &#125;,</span><br><span class="line">    syb:syb，</span><br><span class="line">    age:<span class="literal">undefined</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> copy=<span class="built_in">JSON</span>.parse(<span class="built_in">JSON</span>.stringify(obj));</span><br><span class="line"><span class="built_in">console</span>.log(copy);<span class="comment">//&#123;name:'fred'&#125;</span></span><br></pre></td></tr></table></figure>
 </li>
@@ -463,8 +463,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/11/11/first/" rel="next" title="总得走出第一步吧！">
-                <i class="fa fa-chevron-left"></i> 总得走出第一步吧！
+              <a href="/2019/10/12/webpack-plugins/" rel="next" title="webpack-plugins">
+                <i class="fa fa-chevron-left"></i> webpack-plugins
               </a>
             
           </div>
@@ -563,7 +563,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -574,7 +574,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -585,7 +585,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -635,7 +635,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#深拷贝与浅拷贝的含义"><span class="nav-number">1.</span> <span class="nav-text">深拷贝与浅拷贝的含义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何实现浅拷贝"><span class="nav-number">2.</span> <span class="nav-text">如何实现浅拷贝</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#数组的浅拷贝"><span class="nav-number">2.0.1.</span> <span class="nav-text">数组的浅拷贝</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#对象的浅拷贝"><span class="nav-number">2.0.2.</span> <span class="nav-text">对象的浅拷贝</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#深拷贝的实现"><span class="nav-number">2.0.3.</span> <span class="nav-text">深拷贝的实现</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#深拷贝与浅拷贝的含义"><span class="nav-number">1.</span> <span class="nav-text">深拷贝与浅拷贝的含义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何实现浅拷贝"><span class="nav-number">2.</span> <span class="nav-text">如何实现浅拷贝</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#数组的浅拷贝"><span class="nav-number">2.0.1.</span> <span class="nav-text">数组的浅拷贝</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#对象的浅拷贝"><span class="nav-number">2.0.2.</span> <span class="nav-text">对象的浅拷贝</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#深拷贝的实现"><span class="nav-number">3.</span> <span class="nav-text">深拷贝的实现</span></a></li></ol></div>
             
 
           </div>
@@ -655,7 +655,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

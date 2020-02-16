@@ -289,6 +289,163 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://weifo.github.io/2019/12/12/随笔-如何用es6+写出优雅的js代码/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="weifo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="weifo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/12/12/随笔-如何用es6+写出优雅的js代码/" itemprop="url">随笔 - 如何用es6+写出优雅的js代码</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-12T09:59:21+08:00">
+                2019-12-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/开发随笔/" itemprop="url" rel="index">
+                    <span itemprop="name">开发随笔</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>兼容 IE ？不存在的好吗。</p>
+<p>其实使用新语法配合 <code>babel</code> 的转码，已经可以解决这一些问题了。既然如此，那就多使用新语法去探索一下怎么更好的去写代码吧。</p>
+<p>下面分享个人开发中常用的 js 写法技巧，希望对各位有所帮助。</p>
+<h2 id="使用-let-const"><a href="#使用-let-const" class="headerlink" title="使用 let / const"></a>使用 let / const</h2><p><code>var</code> 命令会发生”变量提升“现象，即变量可以在声明之前使用，值为 <code>undefined</code>。这种现象多多少少是有些奇怪的。</p>
+<p>个人认为，对声明的变量确定后面不会发生更改时，即使性能上没有太大提升差异在，但使用 <code>const</code>, 代码的可读性也会增强很多。</p>
+<ul>
+<li><code>const</code> 实际上保证的，并不是变量的值不得改动，而是变量指向的那个内存地址所保存的数据不得改动。</li>
+<li><code>let</code> 变量指向的内存地址，保存的只是一个指向实际数据的指针</li>
+</ul>
+<p>补充 <code>const</code> 定义的变量不是数据不可变，而是保存的引用地址不能发生改变。例子如下：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> person = &#123; <span class="attr">age</span>: <span class="number">22</span> &#125;</span><br><span class="line">person.age = <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(person.age) <span class="comment">// 1</span></span><br></pre></td></tr></table></figure>
+<p>详情看 <a href="http://es6.ruanyifeng.com/#docs/let" target="_blank" rel="noopener">let 和 const 命令</a></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/12/12/随笔-如何用es6+写出优雅的js代码/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://weifo.github.io/2019/11/14/ts_basic/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -557,7 +714,7 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> obj=&#123;<span class="attr">name</span>:<span class="string">'weifo'</span>,<span class="attr">skill</span>:[<span class="string">'english'</span>,<span class="string">'code'</span>]&#125;;</span><br><span class="line"><span class="keyword">let</span> copyobj=&#123;...obj,<span class="attr">name</span>:<span class="string">'fred'</span>&#125;;<span class="comment">//&#123;name:'fred',skill:[...]&#125;</span></span><br><span class="line"><span class="comment">//es6语法</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h4 id="深拷贝的实现"><a href="#深拷贝的实现" class="headerlink" title="深拷贝的实现"></a>深拷贝的实现</h4><ul>
+<h2 id="深拷贝的实现"><a href="#深拷贝的实现" class="headerlink" title="深拷贝的实现"></a>深拷贝的实现</h2><ul>
 <li><p>trick版</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">JSON</span>.parse(<span class="built_in">JSON</span>.stringify(obj))</span><br><span class="line"><span class="comment">// 该方法的局限性：symbol，undefined，函数的属性值会被忽略，例子如下</span></span><br><span class="line"><span class="keyword">let</span> syb=<span class="built_in">Symbol</span>(<span class="number">12</span>);</span><br><span class="line"><span class="keyword">let</span> obj=&#123;</span><br><span class="line">    name:<span class="string">'fred'</span>,</span><br><span class="line">    say:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        alert(<span class="string">'It wont alert'</span>);</span><br><span class="line">    &#125;,</span><br><span class="line">    syb:syb，</span><br><span class="line">    age:<span class="literal">undefined</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> copy=<span class="built_in">JSON</span>.parse(<span class="built_in">JSON</span>.stringify(obj));</span><br><span class="line"><span class="built_in">console</span>.log(copy);<span class="comment">//&#123;name:'fred'&#125;</span></span><br></pre></td></tr></table></figure>
 </li>
@@ -621,7 +778,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://weifo.github.io/2019/11/11/first/">
+    <link itemprop="mainEntityOfPage" href="https://weifo.github.io/2019/10/12/webpack-plugins/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="weifo">
@@ -640,7 +797,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/11/11/first/" itemprop="url">总得走出第一步吧！</a></h1>
+                <a class="post-title-link" href="/2019/10/12/webpack-plugins/" itemprop="url">webpack-plugins</a></h1>
         
 
         <div class="post-meta">
@@ -652,8 +809,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-11T23:55:12+08:00">
-                2019-11-11
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-10-12T21:43:08+08:00">
+                2019-10-12
               </time>
             
 
@@ -675,8 +832,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/随笔/" itemprop="url" rel="index">
-                    <span itemprop="name">随笔</span>
+                  <a href="/categories/webpack/" itemprop="url" rel="index">
+                    <span itemprop="name">webpack</span>
                   </a>
                 </span>
 
@@ -686,6 +843,8 @@
             </span>
           
 
+          
+            
           
 
           
@@ -711,14 +870,1089 @@
 
       
         
-          
-            <h4 id="总得走出第一步吧！"><a href="#总得走出第一步吧！" class="headerlink" title="总得走出第一步吧！"></a>总得走出第一步吧！</h4><p>脑子里昏昏沉沉，但是又有数条思绪在横冲直撞，此刻的我，也不知道自己抓住了哪一条，开始反思自己失败的人生。</p>
-<p>我，23岁，单身，无存款，无工作，无社交。有一个成名在望的哥哥，他曾经断言我在毕业后会失业，他说对了，我从7月耍到了11月，从情人节到了光棍节，肆意地挥霍自己最宝贵的财富，当然不是钱，是自己的时间。人生重要的路就几步，青春尤其重要，道理都懂，但还是走入了人生的深坑。</p>
-<h4 id="从来不是一个理性的人"><a href="#从来不是一个理性的人" class="headerlink" title="从来不是一个理性的人"></a>从来不是一个理性的人</h4><p>明明知道自己是拖延症晚期患者，却没有没有能力去改变事实，这种病对自己来说无药可救。高中班主任试着让我们学会列计划，我在这块做得很烂，总是管理不好自己的时间，高中是做不完的作业，大学是看不完的手机。</p>
-<p>手机控，即使在手机里面装了forest，卸了网易云和bilibili，却发现web端的应用其实更好用，每天在B站刷纪录片和美剧片段，大脑也开始适应盯着屏幕看视频的生活，因为每次开始学习，大脑就会喊累，看个算法就能让自己头晕眼花。</p>
-<h5 id="自己真的喜欢编程吗？"><a href="#自己真的喜欢编程吗？" class="headerlink" title="自己真的喜欢编程吗？"></a>自己真的喜欢编程吗？</h5><p>我确实学了很长时间的编程了，从前端到后端，从JS到python，但就是没有拿得出手的作品，用行话说，是项目吧！</p>
+          <h2 id="功能类"><a href="#功能类" class="headerlink" title="功能类"></a>功能类</h2><h3 id="html-webpack-plugin"><a href="#html-webpack-plugin" class="headerlink" title="html-webpack-plugin"></a>html-webpack-plugin</h3><ul>
+<li>把编译后的文件（css/js）插入到入口文件中，可以只指定某些文件插入，可以对 html 进行压缩等</li>
+<li><code>filename</code>：输出文件名；</li>
+<li><code>template</code>：模板文件，不局限于 html 后缀哦；</li>
+<li><code>removeComments</code>：移除 HTML 中的注释；</li>
+<li><code>collapseWhitespace</code>：删除空白符与换行符，整个文件会压成一行；</li>
+<li><code>inlineSource</code>：插入到 html 的 css、js 文件都要内联，即不是以 link、script 的形式引入；</li>
+<li><code>inject</code>：是否能注入内容到 输出 的页面去；</li>
+<li><code>chunks</code>：指定插入某些模块；</li>
+<li><code>hash</code>：每次会在插入的文件后面加上 hash ，用于处理缓存，如：；<br>其他：favicon、meta、title ……；</li>
+</ul>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/10/12/webpack-plugins/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://weifo.github.io/2019/10/11/webpack-theory/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="weifo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="weifo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/10/11/webpack-theory/" itemprop="url">webpack - 理论篇</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-10-11T11:15:56+08:00">
+                2019-10-11
+              </time>
+            
+
+            
+
+            
+          </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/webpack/" itemprop="url" rel="index">
+                    <span itemprop="name">webpack</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="entry"><a href="#entry" class="headerlink" title="entry"></a>entry</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @param &#123;String&#125; - String 时 打包为一个文件，默认包名 main.js</span></span><br><span class="line"><span class="comment"> * @param &#123;Array&#125; - Array 时 webpack会把数组里所有文件打包成一个js文件</span></span><br><span class="line"><span class="comment"> * @param &#123;Object&#125; - Object 时 webpack会把对象里的文件分别打包成多个文件</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  entry: <span class="string">'./index.js'</span>,</span><br><span class="line"></span><br><span class="line">  entry: [<span class="string">'./index.js'</span>, <span class="string">'./about.js'</span>],</span><br><span class="line"></span><br><span class="line">  entry: &#123;</span><br><span class="line">    app: <span class="string">'./index.js'</span>,</span><br><span class="line">    about: <span class="string">'./about.js'</span></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  entry: &#123;</span><br><span class="line">    app: <span class="string">'./index.js'</span>,</span><br><span class="line">    vendors: [<span class="string">'jquery'</span>] <span class="comment">// 分离第三方库</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/10/11/webpack-theory/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://weifo.github.io/2019/10/10/webpack-入门/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="weifo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="weifo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/10/10/webpack-入门/" itemprop="url">webpack - 入门篇</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-10-10T22:09:14+08:00">
+                2019-10-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/webpack/" itemprop="url" rel="index">
+                    <span itemprop="name">webpack</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p><img src="https://user-gold-cdn.xitu.io/2018/9/29/1662310b4cdab44f?w=1071&amp;h=604&amp;f=png&amp;s=62218" alt=""></p>
+<h3 id="什么是-webpack"><a href="#什么是-webpack" class="headerlink" title="什么是 webpack"></a>什么是 webpack</h3><p>webpack 可以看做是模块打包机：他做的事情是，分析你的项目结构，找到 <code>JavaScript</code> 模块以及其他的一些浏览器不能直接运行的扩展语言（<code>Scss</code>、<code>TypeScript</code> 等），将其打包为合适的格式以供浏览器使用</p>
+<p>构建就是把源代码转换成发布到线上可执行的 <code>JavaScript</code>、CSS、HTML 代码，包括以下内容：</p>
+<ul>
+<li><strong>代码转换</strong>：<code>TypeScript</code> 编译成 <code>JavaScript</code>、<code>SCSS</code> 编译成 CSS 等等</li>
+<li><strong>文件优化</strong>：压缩 <code>JavaScript</code>、CSS、HTML 代码，压缩合并图片等</li>
+<li><strong>代码分割</strong>：提取多个页面的公共代码、提取首屏不需要执行部分的代码让其异步加载</li>
+<li><strong>模块合并</strong>：在采用模块化的项目有很多模块和文件，需要构建功能把模块分类合并成一个文件</li>
+<li><strong>自动刷新</strong>：监听本地源代码的变化，自动构建，刷新浏览器</li>
+<li><strong>代码校验</strong>：在代码被提交到仓库前需要检测代码是否符合规范，以及单元测试是否通过</li>
+<li><strong>自动发布</strong>：更新完代码后，自动构建出线上发布代码并传输给发布系统。</li>
+</ul>
+<p>构建其实是工程化、自动化思想在前端开发中的体现。把一系列流程用代码去实现，让代码自动化地执行这一系列复杂的流程。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/10/10/webpack-入门/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://weifo.github.io/2019/07/16/随笔-面试/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="weifo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="weifo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/07/16/随笔-面试/" itemprop="url">面试题积累</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-16T20:46:54+08:00">
+                2019-07-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/开发随笔/" itemprop="url" rel="index">
+                    <span itemprop="name">开发随笔</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="Javascript"><a href="#Javascript" class="headerlink" title="Javascript"></a>Javascript</h2><h3 id="正则"><a href="#正则" class="headerlink" title="正则"></a>正则</h3><ul>
+<li>匹配整数</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">'102'</span></span><br><span class="line"><span class="comment">// 1.  ^(-|\+) 以 - 或者 + 开头</span></span><br><span class="line"><span class="comment">// 2. ? 表示出现或者不出现</span></span><br><span class="line"><span class="comment">// 3. [1-9] 取值范围，也是首字符的取值范围</span></span><br><span class="line"><span class="comment">// 4. \d*$ ：* 等价于&#123;0,&#125;，表示出现任意次，有可能不出现。</span></span><br><span class="line"><span class="keyword">var</span> reg = <span class="regexp">/^(-|\+)?[1-9]\d*$/</span></span><br><span class="line">reg.test(str)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>用正则把<code>[1,2,3,4]</code>转换成 <code>&#39;1&#39;, &#39;2&#39;, &#39;3&#39;, &#39;4&#39;</code></li>
+</ul>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/07/16/随笔-面试/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://weifo.github.io/2019/07/11/随笔-面试2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="weifo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="weifo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/07/11/随笔-面试2/" itemprop="url">js - 笔试题收集</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-11T19:57:47+08:00">
+                2019-07-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/开发随笔/" itemprop="url" rel="index">
+                    <span itemprop="name">开发随笔</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="提取-get-请求参数"><a href="#提取-get-请求参数" class="headerlink" title="提取 get 请求参数"></a>提取 get 请求参数</h2><p>有这样一个 URL：<a href="http://item.taobao.com/item.htm?a=1&amp;b=2&amp;c=&amp;d=xxx&amp;e，请写一段JS程序提取URL中的各个GET参数(参数名和参数个数不确定)，将其按key-value形式返回到一个json结构中，如`{a:&#39;1&#39;" target="_blank" rel="noopener">http://item.taobao.com/item.htm?a=1&amp;b=2&amp;c=&amp;d=xxx&amp;e，请写一段JS程序提取URL中的各个GET参数(参数名和参数个数不确定)，将其按key-value形式返回到一个json结构中，如`{a:&#39;1&#39;</a>, b:’2’, c:’’, d:’xxx’, e:undefined}`。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str = <span class="string">'http://item.taobao.com/item.html?a=1&amp;b=2&amp;c=&amp;d=xxx&amp;e&amp;a=2'</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params">str</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> params = &#123;&#125;</span><br><span class="line">  <span class="keyword">const</span> paramsStr = str.replace(<span class="regexp">/.*\?/</span>, <span class="string">''</span>) <span class="comment">// 提取参数字符串</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">// [ 'a=1', 'b=2', 'c=', 'd=xxx', 'e' ]</span></span><br><span class="line">  paramsStr.split(<span class="string">'&amp;'</span>).forEach(<span class="function"><span class="params">v</span> =&gt;</span> &#123;</span><br><span class="line">    d = v.split(<span class="string">'='</span>) <span class="comment">// [a, 1] [b, 2] [c, ''] [d, xxx] [e]</span></span><br><span class="line">    <span class="keyword">if</span> (d[<span class="number">0</span>] <span class="keyword">in</span> params) &#123;</span><br><span class="line">      <span class="built_in">Array</span>.isArray(params[d[<span class="number">0</span>]]) ? params[d[<span class="number">0</span>]].push(d[<span class="number">1</span>]) : (params[d[<span class="number">0</span>]] = [params[d[<span class="number">0</span>]], d[<span class="number">1</span>]])</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      params[d[<span class="number">0</span>]] = d[<span class="number">1</span>]</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">  <span class="keyword">return</span> params</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(test(str)) <span class="comment">// &#123; a: [ '1', '2' ], b: '2', c: '', d: 'xxx', e: undefined &#125;</span></span><br></pre></td></tr></table></figure>
+<h2 id="数组降维"><a href="#数组降维" class="headerlink" title="数组降维"></a>数组降维</h2>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/07/11/随笔-面试2/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://weifo.github.io/2019/07/10/随笔-重排和重绘/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="weifo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="weifo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/07/10/随笔-重排和重绘/" itemprop="url">页面重绘和回流以及优化</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-10T20:51:52+08:00">
+                2019-07-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/开发随笔/" itemprop="url" rel="index">
+                    <span itemprop="name">开发随笔</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="重绘-redraw-amp-重排-reflow"><a href="#重绘-redraw-amp-重排-reflow" class="headerlink" title="重绘 redraw &amp; 重排 reflow"></a>重绘 redraw &amp; 重排 reflow</h2><p>浏览器运行机制图：<br><img src="http://pbj98r3fm.bkt.clouddn.com/%E6%B5%8F%E8%A7%88%E5%99%A8%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6.png" alt="enter description here"></p>
+<h3 id="浏览器的运行机制"><a href="#浏览器的运行机制" class="headerlink" title="浏览器的运行机制"></a>浏览器的运行机制</h3><p> 1.<strong>构建DOM树（parse）</strong>： 渲染引擎解析HTML文档，首先将标签转换成DOM树中的DOM node（包括js生成的标签）生成内容树（Content Tree/DOM Tree）；<br> 2.<strong>构建渲染树（construct）</strong>：解析对应的CSS样式文件信息（包括js生成的样式和外部css文件），而这些文件信息以及HTML中可见的指令（如<b></b>），构建渲染树（Rendering Tree/Frame Tree）；<br> 3.<strong>布局渲染树（reflow/layout）</strong>：从根节点递归调用，计算每一个元素的大小、位置等，给出每个节点所应该在屏幕上出现的精确坐标；<br> 4.<strong>绘制渲染树（paint/repaint）</strong>：遍历渲染树，使用UI后端层来绘制每个节点。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/07/10/随笔-重排和重绘/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://weifo.github.io/2018/11/21/http-TCP/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="weifo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="weifo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/11/21/http-TCP/" itemprop="url">HTTP - TCP 三次握手四次挥手</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-21T09:47:17+08:00">
+                2018-11-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/HTTP/" itemprop="url" rel="index">
+                    <span itemprop="name">HTTP</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="TCP-的三次握手"><a href="#TCP-的三次握手" class="headerlink" title="TCP 的三次握手"></a>TCP 的三次握手</h2><blockquote>
+<p><code>HTTP</code> 请求与 <code>TCP</code> 链接之间的关系，在客户端向服务端请求和返回的过程中，是需要去创建一个 <code>TCP connection</code>，因为 <code>HTTP</code> 是不存在链接这样一个概念的，它只有请求和响应这样一个概念，请求和响应都是一个数据包，中间要通过一个传输通道，这个传输通道就是在 <code>TCP</code> 里面创建了一个从客户端发起和服务端接收的一个链接，<code>TCP</code> 链接在创建的时候是有一个三次握手(三次网络传输)这样一个消耗在的。</p>
+</blockquote>
+<p>下面是 <code>TCP</code> 报文格式图：</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/11/21/1673405dad1eced0?w=500&amp;h=380&amp;f=jpeg&amp;s=32339" alt=""><br>↓↓↓↓<br><img src="https://user-gold-cdn.xitu.io/2018/11/21/1673405e30495223?w=1046&amp;h=402&amp;f=png&amp;s=27889" alt=""></p>
+<p>有几个字段需要重点介绍下：</p>
+<ol>
+<li>Seq 序号: <code>sequeence number</code>，用来标识从 TCP 源端向目的端发送的字节流，发起方发送数据时对此进行标记。</li>
+<li>确认序号：<code>acknowledgment number</code>，只有 ACK 标志位为 1 时，确认序号字段才有效，<code>Ack=Seq+1</code>。</li>
+<li>标志位：共 6 个，即 URG、ACK、PSH、RST、SYN、FIN 等，具体含义如下：<ul>
+<li><code>URG</code>：紧急指针（urgent pointer）有效。</li>
+<li><code>ACK</code>：确认序号有效。</li>
+<li><code>PSH</code>：接收方应该尽快将这个报文交给应用层。</li>
+<li><code>RST</code>：重置连接。</li>
+<li><code>SYN</code>：发起一个新连接。</li>
+<li><code>FIN</code>：释放一个连接。</li>
+</ul>
+</li>
+</ol>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/11/21/http-TCP/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://weifo.github.io/2018/10/01/webpack-babel/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="weifo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="weifo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/01/webpack-babel/" itemprop="url">webpack - babel篇</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-01T14:23:24+08:00">
+                2018-10-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/webpack/" itemprop="url" rel="index">
+                    <span itemprop="name">webpack</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <blockquote>
+<p><a href="https://babeljs.io/docs/en/" target="_blank" rel="noopener">Babel</a> 是一个让我们能够使用 ES 新特性的 JS 编译工具，我们可以在 <code>webpack</code> 中配置 <code>Babel</code>，以便使用 ES6、ES7 标准来编写 JS 代码。</p>
+</blockquote>
+<p>本文以当前最新版本的 <a href="https://babeljs.io/docs/en/" target="_blank" rel="noopener">babel - 7.10</a> 为例， 做 <code>babel</code> 的配置. 相关版本号如下</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"devDependencies"</span>: &#123;</span><br><span class="line">    <span class="attr">"@babel/core"</span>: <span class="string">"^7.1.6"</span>,</span><br><span class="line">    <span class="attr">"@babel/plugin-proposal-decorators"</span>: <span class="string">"^7.1.6"</span>,</span><br><span class="line">    <span class="attr">"@babel/plugin-transform-runtime"</span>: <span class="string">"^7.1.0"</span>,</span><br><span class="line">    <span class="attr">"@babel/preset-env"</span>: <span class="string">"^7.1.6"</span>,</span><br><span class="line">    <span class="attr">"@babel/runtime"</span>: <span class="string">"^7.1.5"</span>,</span><br><span class="line">    <span class="attr">"babel-loader"</span>: <span class="string">"^8.0.4"</span>,</span><br><span class="line">    <span class="attr">"webpack"</span>: <span class="string">"^4.26.1"</span>,</span><br><span class="line">    <span class="attr">"webpack-cli"</span>: <span class="string">"^3.1.2"</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/10/01/webpack-babel/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -802,7 +2036,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -813,7 +2047,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -824,7 +2058,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -878,7 +2112,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

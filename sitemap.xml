@@ -2,9 +2,65 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://weifo.github.io/2018/10/01/webpack-babel/</loc>
+    
+    <lastmod>2020-02-16T13:25:39.050Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://weifo.github.io/2019/10/12/webpack-plugins/</loc>
+    
+    <lastmod>2020-02-16T13:25:04.014Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://weifo.github.io/2019/10/11/webpack-theory/</loc>
+    
+    <lastmod>2020-02-16T13:24:45.730Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://weifo.github.io/2019/07/10/%E9%9A%8F%E7%AC%94-%E9%87%8D%E6%8E%92%E5%92%8C%E9%87%8D%E7%BB%98/</loc>
+    
+    <lastmod>2020-02-16T13:24:20.099Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://weifo.github.io/2019/07/11/%E9%9A%8F%E7%AC%94-%E9%9D%A2%E8%AF%952/</loc>
+    
+    <lastmod>2020-02-16T13:24:05.085Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://weifo.github.io/2019/12/12/%E9%9A%8F%E7%AC%94-%E5%A6%82%E4%BD%95%E7%94%A8es6+%E5%86%99%E5%87%BA%E4%BC%98%E9%9B%85%E7%9A%84js%E4%BB%A3%E7%A0%81/</loc>
+    
+    <lastmod>2020-02-16T13:23:34.829Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://weifo.github.io/2019/07/16/%E9%9A%8F%E7%AC%94-%E9%9D%A2%E8%AF%95/</loc>
+    
+    <lastmod>2020-02-16T13:23:05.983Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://weifo.github.io/2019/10/10/webpack-%E5%85%A5%E9%97%A8/</loc>
+    
+    <lastmod>2020-02-16T13:22:47.303Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://weifo.github.io/2019/11/14/deepclone/</loc>
     
-    <lastmod>2019-11-30T03:20:56.728Z</lastmod>
+    <lastmod>2019-11-30T05:40:26.649Z</lastmod>
     
   </url>
   
@@ -12,13 +68,6 @@
     <loc>https://weifo.github.io/2019/11/14/ts_basic/</loc>
     
     <lastmod>2019-11-18T08:04:06.881Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://weifo.github.io/2019/11/11/first/</loc>
-    
-    <lastmod>2019-11-14T15:01:26.003Z</lastmod>
     
   </url>
   
@@ -33,6 +82,13 @@
     <loc>https://weifo.github.io/about/index.html</loc>
     
     <lastmod>2019-11-11T15:42:16.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://weifo.github.io/2018/11/21/http-TCP/</loc>
+    
+    <lastmod>2019-03-18T15:39:40.000Z</lastmod>
     
   </url>
   
