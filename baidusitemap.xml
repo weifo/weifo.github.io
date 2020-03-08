@@ -4,6 +4,134 @@
 
     
   <url>
+    <loc>https://weifo.github.io/2020/01/23/http-cache/</loc>
+    <lastmod>2020-03-08T07:56:42.195Z</lastmod>
+    <data>
+        <display>
+        <title>HTTP - 缓存机制</title>
+        <pubTime>2020-01-23T01:23:23.000Z</pubTime>
+        
+        <tag>HTTP</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTTP" url="https://weifo.github.io/categories/HTTP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://weifo.github.io/2020/02/23/git-command/</loc>
+    <lastmod>2020-03-08T07:56:26.670Z</lastmod>
+    <data>
+        <display>
+        <title>git 实用指南</title>
+        <pubTime>2020-02-23T13:30:04.000Z</pubTime>
+        
+        <tag>Git</tag>
+         
+         
+           
+             
+              <breadCrumb title="开发工具" url="https://weifo.github.io/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://weifo.github.io/2020/02/21/es6-map&set/</loc>
+    <lastmod>2020-03-08T07:55:58.289Z</lastmod>
+    <data>
+        <display>
+        <title>ES6 - Map 和 Set</title>
+        <pubTime>2020-02-21T01:07:08.000Z</pubTime>
+        
+        <tag>Javascript</tag>
+         
+        <tag>ES6</tag>
+         
+         
+           
+             
+              <breadCrumb title="Javascript" url="https://weifo.github.io/categories/Javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://weifo.github.io/2020/02/20/es6-generator/</loc>
+    <lastmod>2020-03-08T07:55:39.266Z</lastmod>
+    <data>
+        <display>
+        <title>ES6 - generator</title>
+        <pubTime>2020-02-20T03:24:35.000Z</pubTime>
+        
+        <tag>Javascript</tag>
+         
+        <tag>ES6</tag>
+         
+         
+           
+             
+              <breadCrumb title="Javascript" url="https://weifo.github.io/categories/Javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://weifo.github.io/2020/02/12/es6-async&await/</loc>
+    <lastmod>2020-03-08T07:55:16.484Z</lastmod>
+    <data>
+        <display>
+        <title>ES6 - async await</title>
+        <pubTime>2020-02-12T04:02:26.000Z</pubTime>
+        
+        <tag>Javascript</tag>
+         
+        <tag>ES6</tag>
+         
+         
+           
+             
+              <breadCrumb title="Javascript" url="https://weifo.github.io/categories/Javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://weifo.github.io/2020/02/16/es6-class/</loc>
+    <lastmod>2020-03-08T07:55:01.618Z</lastmod>
+    <data>
+        <display>
+        <title>ES6 - Class</title>
+        <pubTime>2020-02-16T14:19:09.000Z</pubTime>
+        
+        <tag>Javascript</tag>
+         
+        <tag>ES6</tag>
+         
+         
+           
+             
+              <breadCrumb title="Javascript" url="https://weifo.github.io/categories/Javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://weifo.github.io/2018/10/01/webpack-babel/</loc>
     <lastmod>2020-02-16T13:25:39.050Z</lastmod>
     <data>

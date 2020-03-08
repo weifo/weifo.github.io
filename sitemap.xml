@@ -2,6 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://weifo.github.io/2020/01/23/http-cache/</loc>
+    
+    <lastmod>2020-03-08T07:56:42.195Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://weifo.github.io/2020/02/23/git-command/</loc>
+    
+    <lastmod>2020-03-08T07:56:26.670Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://weifo.github.io/2020/02/21/es6-map&set/</loc>
+    
+    <lastmod>2020-03-08T07:55:58.289Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://weifo.github.io/2020/02/20/es6-generator/</loc>
+    
+    <lastmod>2020-03-08T07:55:39.266Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://weifo.github.io/2020/02/12/es6-async&await/</loc>
+    
+    <lastmod>2020-03-08T07:55:16.484Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://weifo.github.io/2020/02/16/es6-class/</loc>
+    
+    <lastmod>2020-03-08T07:55:01.618Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://weifo.github.io/2018/10/01/webpack-babel/</loc>
     
     <lastmod>2020-02-16T13:25:39.050Z</lastmod>
