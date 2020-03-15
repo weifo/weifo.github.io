@@ -4,6 +4,147 @@
 
     
   <url>
+    <loc>https://weifo.github.io/2020/02/10/react-redux/</loc>
+    <lastmod>2020-03-15T12:53:33.556Z</lastmod>
+    <data>
+        <display>
+        <title>react-redux</title>
+        <pubTime>2020-02-10T14:42:05.000Z</pubTime>
+        
+        <tag>React</tag>
+         
+         
+           
+             
+              <breadCrumb title="React" url="https://weifo.github.io/categories/React/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://weifo.github.io/2020/02/05/react-LifeCycle/</loc>
+    <lastmod>2020-03-15T12:53:18.766Z</lastmod>
+    <data>
+        <display>
+        <title>react - 生命周期</title>
+        <pubTime>2020-02-05T13:20:13.000Z</pubTime>
+        
+        <tag>React</tag>
+         
+         
+           
+             
+              <breadCrumb title="React" url="https://weifo.github.io/categories/React/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://weifo.github.io/2020/02/08/react-hooks/</loc>
+    <lastmod>2020-03-15T12:52:47.695Z</lastmod>
+    <data>
+        <display>
+        <title>react - hooks(v16.7)</title>
+        <pubTime>2020-02-08T07:30:32.000Z</pubTime>
+        
+        <tag>React</tag>
+         
+         
+           
+             
+              <breadCrumb title="React" url="https://weifo.github.io/categories/React/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://weifo.github.io/2020/02/03/react-context/</loc>
+    <lastmod>2020-03-15T12:52:27.890Z</lastmod>
+    <data>
+        <display>
+        <title>react-context</title>
+        <pubTime>2020-02-03T01:58:42.000Z</pubTime>
+        
+        <tag>React</tag>
+         
+         
+           
+             
+              <breadCrumb title="React" url="https://weifo.github.io/categories/React/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://weifo.github.io/2020/02/02/react-basic/</loc>
+    <lastmod>2020-03-15T12:52:03.694Z</lastmod>
+    <data>
+        <display>
+        <title>react 入门</title>
+        <pubTime>2020-02-02T15:03:29.000Z</pubTime>
+        
+        <tag>React</tag>
+         
+         
+           
+             
+              <breadCrumb title="React" url="https://weifo.github.io/categories/React/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://weifo.github.io/2020/01/06/vue-life-hooks/</loc>
+    <lastmod>2020-03-12T19:13:37.631Z</lastmod>
+    <data>
+        <display>
+        <title>Vue 生命周期</title>
+        <pubTime>2020-01-06T02:30:09.000Z</pubTime>
+        
+        <tag>Vue</tag>
+         
+         
+           
+             
+              <breadCrumb title="Javascript" url="https://weifo.github.io/categories/Javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>https://weifo.github.io/2020/01/03/copy/</loc>
+    <lastmod>2020-03-12T14:16:02.596Z</lastmod>
+    <data>
+        <display>
+        <title>Sequelize - 使用 model 查询数据</title>
+        <pubTime>2020-01-03T06:56:03.000Z</pubTime>
+        
+        <tag>Sequelize</tag>
+         
+         
+           
+             
+              <breadCrumb title="Sequelize" url="https://weifo.github.io/categories/Sequelize/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://weifo.github.io/2020/01/23/http-cache/</loc>
     <lastmod>2020-03-08T07:56:42.195Z</lastmod>
     <data>
@@ -328,7 +469,6 @@
     </data>
     </url>
 
-    
     
     
   <url>

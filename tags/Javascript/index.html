@@ -85,7 +85,7 @@
 <meta name="keywords" content="读书 旅行">
 <meta property="og:type" content="website">
 <meta property="og:title" content="weifo">
-<meta property="og:url" content="https://weifo.github.io/tags/javascript/index.html">
+<meta property="og:url" content="https://weifo.github.io/tags/Javascript/index.html">
 <meta property="og:site_name" content="weifo">
 <meta property="og:description" content="电音爱好者">
 <meta property="og:locale" content="zh-CN">
@@ -121,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="https://weifo.github.io/tags/javascript/"/>
+  <link rel="canonical" href="https://weifo.github.io/tags/Javascript/"/>
 
 
 
 
 
-  <title>Tag: javascript | weifo</title>
+  <title>Tag: Javascript | weifo</title>
   
 
 
@@ -281,7 +281,7 @@
 
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h1>javascript<small>Tag</small>
+        <h1>Javascript<small>Tag</small>
         </h1>
       </div>
 
@@ -293,9 +293,9 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2019/11/14/deepclone/" itemprop="url">
+            <a class="post-title-link" href="/2020/02/21/es6-map&set/" itemprop="url">
               
-                <span itemprop="name">包学不会的深拷贝与浅拷贝</span>
+                <span itemprop="name">ES6 - Map 和 Set</span>
               
             </a>
         
@@ -303,9 +303,93 @@
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
-              datetime="2019-11-14T22:13:05+08:00"
-              content="2019-11-14" >
-          11-14
+              datetime="2020-02-21T09:07:08+08:00"
+              content="2020-02-21" >
+          02-21
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+      
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+            <a class="post-title-link" href="/2020/02/20/es6-generator/" itemprop="url">
+              
+                <span itemprop="name">ES6 - generator</span>
+              
+            </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2020-02-20T11:24:35+08:00"
+              content="2020-02-20" >
+          02-20
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+      
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+            <a class="post-title-link" href="/2020/02/16/es6-class/" itemprop="url">
+              
+                <span itemprop="name">ES6 - Class</span>
+              
+            </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2020-02-16T22:19:09+08:00"
+              content="2020-02-16" >
+          02-16
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+      
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+            <a class="post-title-link" href="/2020/02/12/es6-async&await/" itemprop="url">
+              
+                <span itemprop="name">ES6 - async await</span>
+              
+            </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2020-02-12T12:02:26+08:00"
+              content="2020-02-12" >
+          02-12
         </time>
       </div>
 
@@ -369,7 +453,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">24</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -380,7 +464,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -391,7 +475,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -885,87 +969,6 @@
             } else {
               resultItems.sort(function (resultLeft, resultRight) {
                 if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
-                  return resultRight.searchTextCount - resultLeft.searchTextCount;
-                } else if (resultLeft.hitCount !== resultRight.hitCount) {
-                  return resultRight.hitCount - resultLeft.hitCount;
-                } else {
-                  return resultRight.id - resultLeft.id;
-                }
-              });
-              var searchResultList = '<ul class=\"search-result-list\">';
-              resultItems.forEach(function (result) {
-                searchResultList += result.item;
-              })
-              searchResultList += "</ul>";
-              resultContent.innerHTML = searchResultList;
-            }
-          }
-
-          if ('auto' === 'auto') {
-            input.addEventListener('input', inputEventFunction);
-          } else {
-            $('.search-icon').click(inputEventFunction);
-            input.addEventListener('keypress', function (event) {
-              if (event.keyCode === 13) {
-                inputEventFunction();
-              }
-            });
-          }
-
-          // remove loading animation
-          $(".local-search-pop-overlay").remove();
-          $('body').css('overflow', '');
-
-          proceedsearch();
-        }
-      });
-    }
-
-    // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
-      e.stopPropagation();
-      if (isfetched === false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
-    });
-
-    $('.popup-btn-close').click(onPopupClose);
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-    $(document).on('keyup', function (event) {
-      var shouldDismissSearchPopup = event.which === 27 &&
-        $('.search-popup').is(':visible');
-      if (shouldDismissSearchPopup) {
-        onPopupClose();
-      }
-    });
-  </script>
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-
-  
-
-</body>
-</html>
-archTextCount) {
                   return resultRight.searchTextCount - resultLeft.searchTextCount;
                 } else if (resultLeft.hitCount !== resultRight.hitCount) {
                   return resultRight.hitCount - resultLeft.hitCount;

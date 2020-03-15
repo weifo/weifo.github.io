@@ -2,6 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://weifo.github.io/2020/02/10/react-redux/</loc>
+    
+    <lastmod>2020-03-15T12:53:33.556Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://weifo.github.io/2020/02/05/react-LifeCycle/</loc>
+    
+    <lastmod>2020-03-15T12:53:18.766Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://weifo.github.io/2020/02/08/react-hooks/</loc>
+    
+    <lastmod>2020-03-15T12:52:47.695Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://weifo.github.io/2020/02/03/react-context/</loc>
+    
+    <lastmod>2020-03-15T12:52:27.890Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://weifo.github.io/2020/02/02/react-basic/</loc>
+    
+    <lastmod>2020-03-15T12:52:03.694Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://weifo.github.io/2020/01/06/vue-life-hooks/</loc>
+    
+    <lastmod>2020-03-12T19:13:37.631Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://weifo.github.io/about/index.html</loc>
+    
+    <lastmod>2020-03-12T14:22:55.724Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://weifo.github.io/2020/01/03/copy/</loc>
+    
+    <lastmod>2020-03-12T14:16:02.596Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://weifo.github.io/2020/01/23/http-cache/</loc>
     
     <lastmod>2020-03-08T07:56:42.195Z</lastmod>
@@ -117,13 +173,6 @@
     <loc>https://weifo.github.io//404.html</loc>
     
     <lastmod>2019-11-11T15:42:38.854Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://weifo.github.io/about/index.html</loc>
-    
-    <lastmod>2019-11-11T15:42:16.369Z</lastmod>
     
   </url>
   
