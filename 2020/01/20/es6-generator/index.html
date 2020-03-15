@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="async 函数 async 函数是什么？一句话，它就是 Generator 函数的语法糖。async 函数就是将 Generator 函数的星号（*）替换成 async，将 yield 替换成 await，仅此而已  12345678910111213141516171819function getSomething() &amp;#123;  return &apos;something&apos;&amp;#125;async">
+<meta name="description" content="基本概念 Generator 函数是 ES6 提供的一种异步编程解决方案。语法上，首先可以把它理解成，Generator 函数是一个状态机，封装了多个内部状态。  形式上，Generator 函数是一个普通函数，但是有两个特征。一是，function 关键字与函数名之间有一个星号；二是，函数体内部使用 yield 表达式，定义不同的内部状态。 123456789101112131415161718">
 <meta name="keywords" content="Javascript,ES6">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ES6 - async await">
-<meta property="og:url" content="https://weifo.github.io/2020/02/12/es6-async&await/index.html">
+<meta property="og:title" content="ES6 - generator">
+<meta property="og:url" content="https://weifo.github.io/2020/01/20/es6-generator/index.html">
 <meta property="og:site_name" content="weifo">
-<meta property="og:description" content="async 函数 async 函数是什么？一句话，它就是 Generator 函数的语法糖。async 函数就是将 Generator 函数的星号（*）替换成 async，将 yield 替换成 await，仅此而已  12345678910111213141516171819function getSomething() &amp;#123;  return &apos;something&apos;&amp;#125;async">
+<meta property="og:description" content="基本概念 Generator 函数是 ES6 提供的一种异步编程解决方案。语法上，首先可以把它理解成，Generator 函数是一个状态机，封装了多个内部状态。  形式上，Generator 函数是一个普通函数，但是有两个特征。一是，function 关键字与函数名之间有一个星号；二是，函数体内部使用 yield 表达式，定义不同的内部状态。 123456789101112131415161718">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-03-08T07:55:16.484Z">
+<meta property="og:updated_time" content="2020-03-15T13:09:47.435Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ES6 - async await">
-<meta name="twitter:description" content="async 函数 async 函数是什么？一句话，它就是 Generator 函数的语法糖。async 函数就是将 Generator 函数的星号（*）替换成 async，将 yield 替换成 await，仅此而已  12345678910111213141516171819function getSomething() &amp;#123;  return &apos;something&apos;&amp;#125;async">
+<meta name="twitter:title" content="ES6 - generator">
+<meta name="twitter:description" content="基本概念 Generator 函数是 ES6 提供的一种异步编程解决方案。语法上，首先可以把它理解成，Generator 函数是一个状态机，封装了多个内部状态。  形式上，Generator 函数是一个普通函数，但是有两个特征。一是，function 关键字与函数名之间有一个星号；二是，函数体内部使用 yield 表达式，定义不同的内部状态。 123456789101112131415161718">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="https://weifo.github.io/2020/02/12/es6-async&await/"/>
+  <link rel="canonical" href="https://weifo.github.io/2020/01/20/es6-generator/"/>
 
 
 
 
 
-  <title>ES6 - async await | weifo</title>
+  <title>ES6 - generator | weifo</title>
   
 
 
@@ -289,7 +289,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://weifo.github.io/2020/02/12/es6-async&await/">
+    <link itemprop="mainEntityOfPage" href="https://weifo.github.io/2020/01/20/es6-generator/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="weifo">
@@ -306,7 +306,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">ES6 - async await</h1>
+          <h1 class="post-title" itemprop="name headline">ES6 - generator</h1>
         
 
         <div class="post-meta">
@@ -318,8 +318,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-02-12T12:02:26+08:00">
-                2020-02-12
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-20T11:24:35+08:00">
+                2020-01-20
               </time>
             
 
@@ -359,8 +359,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2020/02/12/es6-async&await/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2020/02/12/es6-async&await/" itemprop="commentsCount"></span>
+                <a href="/2020/01/20/es6-generator/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2020/01/20/es6-generator/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -388,15 +388,21 @@
       
 
       
-        <h2 id="async-函数"><a href="#async-函数" class="headerlink" title="async 函数"></a>async 函数</h2><blockquote>
-<p><code>async</code> 函数是什么？一句话，它就是 <code>Generator</code> 函数的语法糖。<code>async</code> 函数就是将 <code>Generator</code> 函数的星号（*）替换成 <code>async</code>，将 <code>yield</code> 替换成 <code>await</code>，仅此而已</p>
+        <h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><blockquote>
+<p><code>Generator</code> 函数是 ES6 提供的一种异步编程解决方案。语法上，首先可以把它理解成，<code>Generator</code> 函数是一个状态机，封装了多个内部状态。</p>
 </blockquote>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getSomething</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="string">'something'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">testAsync</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="string">'Hello async'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> v1 = <span class="keyword">await</span> getSomething() <span class="comment">// 普通值</span></span><br><span class="line">  <span class="keyword">const</span> v2 = <span class="keyword">await</span> testAsync() <span class="comment">// Promise对象</span></span><br><span class="line">  <span class="built_in">console</span>.log(v1, v2)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test()</span><br><span class="line">  .then(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'调用该函数时，会立即返回一个Promise对象'</span>)</span><br><span class="line">  &#125;)</span><br><span class="line">  .catch(<span class="function"><span class="params">e</span> =&gt;</span> &#123;&#125;)</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<h2 id="async-函数的实现原理"><a href="#async-函数的实现原理" class="headerlink" title="async 函数的实现原理"></a>async 函数的实现原理</h2><p><code>async</code> 函数的实现原理，就是将 <code>Generator</code> 函数和自动执行器，包装在一个函数里。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params">args</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 等同于</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params">args</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> spawn(<span class="function"><span class="keyword">function</span>*(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>所有的 <code>async</code> 函数都可以写成上面的第二种形式，其中的 <code>spawn</code> 函数就是自动执行器。<br>下面给出 <code>spawn</code> 函数的实现，基本就是前文自动执行器的翻版。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">spawn</span>(<span class="params">genF</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve, reject</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">const</span> gen = genF()</span><br><span class="line">    <span class="keyword">let</span> next</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">step</span>(<span class="params">nextF</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">let</span> next</span><br><span class="line">      <span class="keyword">try</span> &#123;</span><br><span class="line">        next = nextF()</span><br><span class="line">      &#125; <span class="keyword">catch</span> (err) &#123;</span><br><span class="line">        <span class="keyword">return</span> reject(err)</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">if</span> (next.done) <span class="keyword">return</span> resolve(next.value)</span><br><span class="line">      <span class="built_in">Promise</span>.resolve(next.value).then(</span><br><span class="line">        v =&gt; step(<span class="function"><span class="params">()</span> =&gt;</span> gen.next(v)), </span><br><span class="line">        e =&gt; gen.throw(e)</span><br><span class="line">      )</span><br><span class="line">    &#125;</span><br><span class="line">    step(<span class="function"><span class="params">()</span> =&gt;</span> gen.next(<span class="literal">undefined</span>))</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>形式上，<code>Generator</code> 函数是一个普通函数，但是有两个特征。一是，<code>function</code> 关键字与函数名之间有一个星号；二是，函数体内部使用 <code>yield</code> 表达式，定义不同的内部状态。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 该函数有三个状态：hello，world 和 return 语句（结束执行）</span></span><br><span class="line"><span class="function"><span class="keyword">function</span>* <span class="title">helloWorldGenerator</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">yield</span> <span class="string">'hello'</span></span><br><span class="line">  <span class="keyword">yield</span> <span class="string">'world'</span></span><br><span class="line">  <span class="keyword">return</span> <span class="string">'ending'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> hw = helloWorldGenerator()</span><br><span class="line"></span><br><span class="line"><span class="comment">// 只有调用 next() 函数才会执行</span></span><br><span class="line"></span><br><span class="line">hw.next() <span class="comment">// &#123; value: 'hello', done: false &#125;</span></span><br><span class="line">hw.next() <span class="comment">// &#123; value: 'world', done: false &#125;</span></span><br><span class="line">hw.next() <span class="comment">// &#123; value: 'ending', done: true &#125;</span></span><br><span class="line">hw.next() <span class="comment">// &#123; value: undefined, done: true &#125;</span></span><br><span class="line"></span><br><span class="line">hw <span class="comment">// &#123;&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// yield表达式如果用在另一个表达式之中，必须放在圆括号里面</span></span><br><span class="line"><span class="function"><span class="keyword">function</span>* <span class="title">demo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'Hello'</span> + <span class="keyword">yield</span>) <span class="comment">// SyntaxError</span></span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'Hello'</span> + <span class="keyword">yield</span> <span class="number">123</span>) <span class="comment">// SyntaxError</span></span><br><span class="line"></span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'Hello'</span> + (<span class="keyword">yield</span>)) <span class="comment">// OK</span></span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'Hello'</span> + (<span class="keyword">yield</span> <span class="number">123</span>)) <span class="comment">// OK</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>Generator</code> 函数的调用方法与普通函数一样，也是在函数名后面加上一对圆括号<br>不同的是，调用 <code>Generator</code> 函数后，该函数并不执行，返回的也不是函数运行结果，而是一个指向内部状态的指针对象</p>
+<p>总结一下：</p>
+<ul>
+<li>调用 <code>Generator</code> 函数，返回一个遍历器对象，代表 <code>Generator</code> 函数的内部指针。</li>
+<li>以后，每次调用遍历器对象的 next 方法，就会返回一个有着 <code>value</code> 和 <code>done</code> 两个属性的对象。<ul>
+<li><code>value</code> 属性表示当前的内部状态的值，是 yield 表达式后面那个表达式的值</li>
+<li><code>done</code> 属性是一个布尔值，表示是否遍历结束。</li>
+</ul>
+</li>
+</ul>
 
       
     </div>
@@ -429,8 +435,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/02/10/react-redux/" rel="next" title="react-redux">
-                <i class="fa fa-chevron-left"></i> react-redux
+              <a href="/2020/01/16/es6-class/" rel="next" title="ES6 - Class">
+                <i class="fa fa-chevron-left"></i> ES6 - Class
               </a>
             
           </div>
@@ -439,8 +445,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/02/16/es6-class/" rel="prev" title="ES6 - Class">
-                ES6 - Class <i class="fa fa-chevron-right"></i>
+              <a href="/2020/01/21/es6-map&set/" rel="prev" title="ES6 - Map 和 Set">
+                ES6 - Map 和 Set <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -572,7 +578,7 @@
             <div class="links-of-author motion-element">
                 
                   <span class="links-of-author-item">
-                    <a href="https://github.com/gershonv" target="_blank" title="GitHub">
+                    <a href="https://github.com/weifo" target="_blank" title="GitHub">
                       
                         <i class="fa fa-fw fa-github"></i>GitHub</a>
                   </span>
@@ -601,7 +607,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#async-函数"><span class="nav-number">1.</span> <span class="nav-text">async 函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#async-函数的实现原理"><span class="nav-number">2.</span> <span class="nav-text">async 函数的实现原理</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本概念"><span class="nav-number">1.</span> <span class="nav-text">基本概念</span></a></li></ol></div>
             
 
           </div>

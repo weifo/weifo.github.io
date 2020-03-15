@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Git," />
+  <meta name="keywords" content="Javascript,ES6," />
 
 
 
@@ -81,20 +81,18 @@
 
 
 
-<meta name="description" content="commit 规范速查 feat：新功能（feature） fix：修补 bug docs：文档（documentation） style： 格式（不影响代码运行的变动） refactor：重构（即不是新增功能，也不是修改 bug 的代码变动） test：增加测试 chore：构建过程或辅助工具的变动 revert: 撤销以前的 commit 1revert: feat(pencil): add">
-<meta name="keywords" content="Git">
+<meta name="description" content="async 函数 async 函数是什么？一句话，它就是 Generator 函数的语法糖。async 函数就是将 Generator 函数的星号（*）替换成 async，将 yield 替换成 await，仅此而已  12345678910111213141516171819function getSomething() &amp;#123;  return &apos;something&apos;&amp;#125;async">
+<meta name="keywords" content="Javascript,ES6">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git 实用指南">
-<meta property="og:url" content="https://weifo.github.io/2020/02/23/git-command/index.html">
+<meta property="og:title" content="ES6 - async await">
+<meta property="og:url" content="https://weifo.github.io/2020/01/12/es6-async&await/index.html">
 <meta property="og:site_name" content="weifo">
-<meta property="og:description" content="commit 规范速查 feat：新功能（feature） fix：修补 bug docs：文档（documentation） style： 格式（不影响代码运行的变动） refactor：重构（即不是新增功能，也不是修改 bug 的代码变动） test：增加测试 chore：构建过程或辅助工具的变动 revert: 撤销以前的 commit 1revert: feat(pencil): add">
+<meta property="og:description" content="async 函数 async 函数是什么？一句话，它就是 Generator 函数的语法糖。async 函数就是将 Generator 函数的星号（*）替换成 async，将 yield 替换成 await，仅此而已  12345678910111213141516171819function getSomething() &amp;#123;  return &apos;something&apos;&amp;#125;async">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/1/8/1682b86ab859defb?w=505&h=412&f=png&s=45734">
-<meta property="og:updated_time" content="2020-03-08T07:56:26.670Z">
+<meta property="og:updated_time" content="2020-03-15T13:09:27.173Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="git 实用指南">
-<meta name="twitter:description" content="commit 规范速查 feat：新功能（feature） fix：修补 bug docs：文档（documentation） style： 格式（不影响代码运行的变动） refactor：重构（即不是新增功能，也不是修改 bug 的代码变动） test：增加测试 chore：构建过程或辅助工具的变动 revert: 撤销以前的 commit 1revert: feat(pencil): add">
-<meta name="twitter:image" content="https://user-gold-cdn.xitu.io/2019/1/8/1682b86ab859defb?w=505&h=412&f=png&s=45734">
+<meta name="twitter:title" content="ES6 - async await">
+<meta name="twitter:description" content="async 函数 async 函数是什么？一句话，它就是 Generator 函数的语法糖。async 函数就是将 Generator 函数的星号（*）替换成 async，将 yield 替换成 await，仅此而已  12345678910111213141516171819function getSomething() &amp;#123;  return &apos;something&apos;&amp;#125;async">
 
 
 
@@ -124,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="https://weifo.github.io/2020/02/23/git-command/"/>
+  <link rel="canonical" href="https://weifo.github.io/2020/01/12/es6-async&await/"/>
 
 
 
 
 
-  <title>git 实用指南 | weifo</title>
+  <title>ES6 - async await | weifo</title>
   
 
 
@@ -291,7 +289,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://weifo.github.io/2020/02/23/git-command/">
+    <link itemprop="mainEntityOfPage" href="https://weifo.github.io/2020/01/12/es6-async&await/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="weifo">
@@ -308,7 +306,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">git 实用指南</h1>
+          <h1 class="post-title" itemprop="name headline">ES6 - async await</h1>
         
 
         <div class="post-meta">
@@ -320,8 +318,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-02-23T21:30:04+08:00">
-                2020-02-23
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-12T12:02:26+08:00">
+                2020-01-12
               </time>
             
 
@@ -343,8 +341,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/开发工具/" itemprop="url" rel="index">
-                    <span itemprop="name">开发工具</span>
+                  <a href="/categories/Javascript/" itemprop="url" rel="index">
+                    <span itemprop="name">Javascript</span>
                   </a>
                 </span>
 
@@ -361,8 +359,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2020/02/23/git-command/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2020/02/23/git-command/" itemprop="commentsCount"></span>
+                <a href="/2020/01/12/es6-async&await/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2020/01/12/es6-async&await/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -390,40 +388,16 @@
       
 
       
-        <h2 id="commit-规范速查"><a href="#commit-规范速查" class="headerlink" title="commit 规范速查"></a>commit 规范速查</h2><ul>
-<li><code>feat</code>：新功能（feature）</li>
-<li><code>fix</code>：修补 bug</li>
-<li><code>docs</code>：文档（documentation）</li>
-<li><code>style</code>： 格式（不影响代码运行的变动）</li>
-<li><code>refactor</code>：重构（即不是新增功能，也不是修改 bug 的代码变动）</li>
-<li><code>test</code>：增加测试</li>
-<li><code>chore</code>：构建过程或辅助工具的变动</li>
-<li><p><code>revert</code>: 撤销以前的 commit</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">revert: feat(pencil): add <span class="string">'graphiteWidth'</span> option</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
+        <h2 id="async-函数"><a href="#async-函数" class="headerlink" title="async 函数"></a>async 函数</h2><blockquote>
+<p><code>async</code> 函数是什么？一句话，它就是 <code>Generator</code> 函数的语法糖。<code>async</code> 函数就是将 <code>Generator</code> 函数的星号（*）替换成 <code>async</code>，将 <code>yield</code> 替换成 <code>await</code>，仅此而已</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getSomething</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="string">'something'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">testAsync</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="string">'Hello async'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> v1 = <span class="keyword">await</span> getSomething() <span class="comment">// 普通值</span></span><br><span class="line">  <span class="keyword">const</span> v2 = <span class="keyword">await</span> testAsync() <span class="comment">// Promise对象</span></span><br><span class="line">  <span class="built_in">console</span>.log(v1, v2)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test()</span><br><span class="line">  .then(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'调用该函数时，会立即返回一个Promise对象'</span>)</span><br><span class="line">  &#125;)</span><br><span class="line">  .catch(<span class="function"><span class="params">e</span> =&gt;</span> &#123;&#125;)</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-<h2 id="本地创建、连接远程仓库"><a href="#本地创建、连接远程仓库" class="headerlink" title="本地创建、连接远程仓库"></a>本地创建、连接远程仓库</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建并连接远程仓库</span></span><br><span class="line">mkdir git-demo</span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> git-demo/</span><br><span class="line"></span><br><span class="line">git init</span><br><span class="line"></span><br><span class="line"><span class="comment"># 连接远程仓库</span></span><br><span class="line">git remote add origin https://github.com/gershonv/git-demo.git</span><br></pre></td></tr></table></figure>
-<h2 id="新建文件并推向远端"><a href="#新建文件并推向远端" class="headerlink" title="新建文件并推向远端"></a>新建文件并推向远端</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建 a.js</span></span><br><span class="line">touch a.js</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加到暂存区（见下文）</span></span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line"><span class="comment"># commit 记录（见下文）</span></span><br><span class="line">git commit -m <span class="string">'feat: 新增 a.js 文件'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 推向远端 master 分支（见下文）</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
-<ul>
-<li>git add<ul>
-<li><code>git add [file1 file2 file3...]</code>: 添加多个文件</li>
-<li><code>git add .</code> : 暂存所有文件</li>
-</ul>
-</li>
-</ul>
-<h2 id="git-status"><a href="#git-status" class="headerlink" title="git status"></a>git status</h2><p><img src="https://user-gold-cdn.xitu.io/2019/1/8/1682b86ab859defb?w=505&amp;h=412&amp;f=png&amp;s=45734" alt=""></p>
-<p>M - 被修改，A - 被添加，D - 被删除，R - 重命名，?? - 未被跟踪</p>
-<h2 id="撤销操作"><a href="#撤销操作" class="headerlink" title="撤销操作"></a>撤销操作</h2><h3 id="撤销-git-add"><a href="#撤销-git-add" class="headerlink" title="撤销 git add"></a>撤销 git add</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 新建 b.js 文件</span></span><br><span class="line">touch b.js</span><br><span class="line"></span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line">git statis</span><br><span class="line"></span><br><span class="line"><span class="comment"># 撤销 git add</span></span><br><span class="line">git reset head b.js</span><br></pre></td></tr></table></figure>
-<ul>
-<li><code>git reset head</code> : 如果后面什么都不跟的话 就是上一次 add 里面的全部撤销了</li>
-<li><code>git reset head file</code>: 对某个文件进行撤销了</li>
-</ul>
-<h3 id="撤销本地修改"><a href="#撤销本地修改" class="headerlink" title="撤销本地修改"></a>撤销本地修改</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 修改文件</span></span><br><span class="line">vim a.js</span><br><span class="line"></span><br><span class="line"><span class="comment"># 插入数据</span></span><br><span class="line"><span class="built_in">shift</span> + i</span><br><span class="line"></span><br><span class="line"><span class="comment"># 保存退出</span></span><br><span class="line"><span class="built_in">shift</span> + : wq</span><br><span class="line"></span><br><span class="line"><span class="comment"># 加入暂存区</span></span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line">git commit -m <span class="string">'refactor: 修改 a.js 文件'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 撤销修改</span></span><br><span class="line">git checkout -- a.js</span><br></pre></td></tr></table></figure>
-<h3 id="撤销-git-commit"><a href="#撤销-git-commit" class="headerlink" title="撤销 git commit"></a>撤销 git commit</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查看 commit 记录</span></span><br><span class="line">git <span class="built_in">log</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置到某个节点。</span></span><br><span class="line">git reset --hard ea794cf0dcf934b594</span><br></pre></td></tr></table></figure>
-<h2 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h2><h3 id="新建分支并推向远程"><a href="#新建分支并推向远程" class="headerlink" title="新建分支并推向远程"></a>新建分支并推向远程</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 新建并切换本地分支</span></span><br><span class="line">git checkout -b dev</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看当前分支</span></span><br><span class="line">git branch</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看远程分支</span></span><br><span class="line">git branch -r</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送到远程</span></span><br><span class="line">git push origin dev</span><br></pre></td></tr></table></figure>
-<h3 id="合并分支"><a href="#合并分支" class="headerlink" title="合并分支"></a>合并分支</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 开发完 dev 分支后</span></span><br><span class="line">git checkout master</span><br><span class="line"></span><br><span class="line"><span class="comment"># 合并 dev 分支到主分支</span></span><br><span class="line">git merge dev</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
-<h3 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查看所有分支 远程+本地</span></span><br><span class="line">git branch -a</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除远程分支</span></span><br><span class="line">git push origin -d dev</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除本地分支</span></span><br><span class="line">git checkout master</span><br><span class="line">git branch -d dev</span><br></pre></td></tr></table></figure>
+<h2 id="async-函数的实现原理"><a href="#async-函数的实现原理" class="headerlink" title="async 函数的实现原理"></a>async 函数的实现原理</h2><p><code>async</code> 函数的实现原理，就是将 <code>Generator</code> 函数和自动执行器，包装在一个函数里。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params">args</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 等同于</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params">args</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> spawn(<span class="function"><span class="keyword">function</span>*(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>所有的 <code>async</code> 函数都可以写成上面的第二种形式，其中的 <code>spawn</code> 函数就是自动执行器。<br>下面给出 <code>spawn</code> 函数的实现，基本就是前文自动执行器的翻版。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">spawn</span>(<span class="params">genF</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve, reject</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">const</span> gen = genF()</span><br><span class="line">    <span class="keyword">let</span> next</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">step</span>(<span class="params">nextF</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">let</span> next</span><br><span class="line">      <span class="keyword">try</span> &#123;</span><br><span class="line">        next = nextF()</span><br><span class="line">      &#125; <span class="keyword">catch</span> (err) &#123;</span><br><span class="line">        <span class="keyword">return</span> reject(err)</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">if</span> (next.done) <span class="keyword">return</span> resolve(next.value)</span><br><span class="line">      <span class="built_in">Promise</span>.resolve(next.value).then(</span><br><span class="line">        v =&gt; step(<span class="function"><span class="params">()</span> =&gt;</span> gen.next(v)), </span><br><span class="line">        e =&gt; gen.throw(e)</span><br><span class="line">      )</span><br><span class="line">    &#125;</span><br><span class="line">    step(<span class="function"><span class="params">()</span> =&gt;</span> gen.next(<span class="literal">undefined</span>))</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
       
     </div>
     
@@ -440,7 +414,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Git/" rel="tag"># Git</a>
+            <a href="/tags/Javascript/" rel="tag"># Javascript</a>
+          
+            <a href="/tags/ES6/" rel="tag"># ES6</a>
           
         </div>
       
@@ -453,8 +429,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/02/21/es6-map&set/" rel="next" title="ES6 - Map 和 Set">
-                <i class="fa fa-chevron-left"></i> ES6 - Map 和 Set
+              <a href="/2020/01/06/vue-life-hooks/" rel="next" title="Vue 生命周期">
+                <i class="fa fa-chevron-left"></i> Vue 生命周期
               </a>
             
           </div>
@@ -462,6 +438,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/01/16/es6-class/" rel="prev" title="ES6 - Class">
+                ES6 - Class <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -592,7 +572,7 @@
             <div class="links-of-author motion-element">
                 
                   <span class="links-of-author-item">
-                    <a href="https://github.com/gershonv" target="_blank" title="GitHub">
+                    <a href="https://github.com/weifo" target="_blank" title="GitHub">
                       
                         <i class="fa fa-fw fa-github"></i>GitHub</a>
                   </span>
@@ -621,7 +601,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#commit-规范速查"><span class="nav-number">1.</span> <span class="nav-text">commit 规范速查</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地创建、连接远程仓库"><span class="nav-number">2.</span> <span class="nav-text">本地创建、连接远程仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新建文件并推向远端"><span class="nav-number">3.</span> <span class="nav-text">新建文件并推向远端</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-status"><span class="nav-number">4.</span> <span class="nav-text">git status</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#撤销操作"><span class="nav-number">5.</span> <span class="nav-text">撤销操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#撤销-git-add"><span class="nav-number">5.1.</span> <span class="nav-text">撤销 git add</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#撤销本地修改"><span class="nav-number">5.2.</span> <span class="nav-text">撤销本地修改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#撤销-git-commit"><span class="nav-number">5.3.</span> <span class="nav-text">撤销 git commit</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分支"><span class="nav-number">6.</span> <span class="nav-text">分支</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#新建分支并推向远程"><span class="nav-number">6.1.</span> <span class="nav-text">新建分支并推向远程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#合并分支"><span class="nav-number">6.2.</span> <span class="nav-text">合并分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分支管理"><span class="nav-number">6.3.</span> <span class="nav-text">分支管理</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#async-函数"><span class="nav-number">1.</span> <span class="nav-text">async 函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#async-函数的实现原理"><span class="nav-number">2.</span> <span class="nav-text">async 函数的实现原理</span></a></li></ol></div>
             
 
           </div>
