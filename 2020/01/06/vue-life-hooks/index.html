@@ -90,7 +90,7 @@
 <meta property="og:description" content="生命周期钩子函数 解释：  created阶段的ajax请求与mounted请求的区别：前者页面视图未出现，如果请求信息过多，页面会长时间处于白屏状态 mounted 不会承诺所有的子组件也都一起被挂载。如果你希望等到整个视图都渲染完毕，可以用 vm.$nextTick  单个组件生命周期 123456789101112131415161718192021222324252627282930313">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://weifo-blog.oss-cn-shanghai.aliyuncs.com/blog/vue-hooks.jpg?Expires=1584026727&OSSAccessKeyId=TMP.3KiQHdpwZF97ctjftLMwdwGNk2VSmAh5U5sdi3TrDEqQErFtr7mpZgRU3m91HzzGK7xFLJqDd4MSPtyy1LrCqYWBrScgF4&Signature=Sfn6HHcFvvQm9m%2BKG86w68hQa5w%3D">
-<meta property="og:updated_time" content="2020-03-12T19:13:37.631Z">
+<meta property="og:updated_time" content="2020-03-15T13:18:37.747Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue 生命周期">
 <meta name="twitter:description" content="生命周期钩子函数 解释：  created阶段的ajax请求与mounted请求的区别：前者页面视图未出现，如果请求信息过多，页面会长时间处于白屏状态 mounted 不会承诺所有的子组件也都一起被挂载。如果你希望等到整个视图都渲染完毕，可以用 vm.$nextTick  单个组件生命周期 123456789101112131415161718192021222324252627282930313">
@@ -355,18 +355,6 @@
           
 
           
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2020/01/06/vue-life-hooks/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2020/01/06/vue-life-hooks/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
 
           
           
@@ -474,17 +462,6 @@
 
 
           
-
-  
-    <div class="comments" id="comments">
-      
-        <div id="gitment-container"></div>
-      
-    </div>
-
-  
-
-
 
         </div>
         
@@ -802,30 +779,6 @@
 
     
 
-    
-      <script type="text/javascript">
-      function renderGitment(){
-        var gitment = new Gitmint({
-            id: window.location.pathname, 
-            owner: 'gershonv',
-            repo: 'gershonv.github.io',
-            
-            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-            
-            oauth: {
-            
-            
-                client_secret: 'c28aa931a2204c3ae59ab2e17aaa3ddd6b5ce8e6',
-            
-                client_id: 'ece10fea60fa925783ab'
-            }});
-        gitment.render('gitment-container');
-      }
-
-      
-      renderGitment();
-      
-      </script>
     
 
 

@@ -4,8 +4,246 @@
 
     
   <url>
+    <loc>https://weifo.github.io/2019/07/10/%E9%9A%8F%E7%AC%94-%E9%87%8D%E6%8E%92%E5%92%8C%E9%87%8D%E7%BB%98/</loc>
+    <lastmod>2020-03-15T13:19:56.578Z</lastmod>
+    <data>
+        <display>
+        <title>页面重绘和回流以及优化</title>
+        <pubTime>2019-07-10T12:51:52.000Z</pubTime>
+        
+        <tag>DOM</tag>
+         
+         
+           
+             
+              <breadCrumb title="开发随笔" url="https://weifo.github.io/categories/%E5%BC%80%E5%8F%91%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://weifo.github.io/2019/12/12/%E9%9A%8F%E7%AC%94-%E5%A6%82%E4%BD%95%E7%94%A8es6+%E5%86%99%E5%87%BA%E4%BC%98%E9%9B%85%E7%9A%84js%E4%BB%A3%E7%A0%81/</loc>
+    <lastmod>2020-03-15T13:19:47.993Z</lastmod>
+    <data>
+        <display>
+        <title>随笔 - 如何用es6+写出优雅的js代码</title>
+        <pubTime>2019-12-12T01:59:21.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="开发随笔" url="https://weifo.github.io/categories/%E5%BC%80%E5%8F%91%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://weifo.github.io/2019/07/11/%E9%9A%8F%E7%AC%94-%E9%9D%A2%E8%AF%952/</loc>
+    <lastmod>2020-03-15T13:19:41.868Z</lastmod>
+    <data>
+        <display>
+        <title>js - 笔试题收集</title>
+        <pubTime>2019-07-11T11:57:47.000Z</pubTime>
+        
+        <tag>面试系列</tag>
+         
+         
+           
+             
+              <breadCrumb title="开发随笔" url="https://weifo.github.io/categories/%E5%BC%80%E5%8F%91%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://weifo.github.io/2019/07/16/%E9%9A%8F%E7%AC%94-%E9%9D%A2%E8%AF%95/</loc>
+    <lastmod>2020-03-15T13:19:30.476Z</lastmod>
+    <data>
+        <display>
+        <title>面试题积累</title>
+        <pubTime>2019-07-16T12:46:54.000Z</pubTime>
+        
+        <tag>面试系列</tag>
+         
+         
+           
+             
+              <breadCrumb title="开发随笔" url="https://weifo.github.io/categories/%E5%BC%80%E5%8F%91%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://weifo.github.io/2019/10/10/webpack-%E5%85%A5%E9%97%A8/</loc>
+    <lastmod>2020-03-15T13:19:10.088Z</lastmod>
+    <data>
+        <display>
+        <title>webpack - 入门篇</title>
+        <pubTime>2019-10-10T14:09:14.000Z</pubTime>
+        
+        <tag>webpack</tag>
+         
+         
+           
+             
+              <breadCrumb title="webpack" url="https://weifo.github.io/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://weifo.github.io/2019/10/11/webpack-theory/</loc>
+    <lastmod>2020-03-15T13:18:57.339Z</lastmod>
+    <data>
+        <display>
+        <title>webpack - 理论篇</title>
+        <pubTime>2019-10-11T03:15:56.000Z</pubTime>
+        
+        <tag>webpack</tag>
+         
+         
+           
+             
+              <breadCrumb title="webpack" url="https://weifo.github.io/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://weifo.github.io/2019/10/12/webpack-plugins/</loc>
+    <lastmod>2020-03-15T13:18:52.020Z</lastmod>
+    <data>
+        <display>
+        <title>webpack-plugins</title>
+        <pubTime>2019-10-12T13:43:08.000Z</pubTime>
+        
+        <tag>webpack</tag>
+         
+         
+           
+             
+              <breadCrumb title="webpack" url="https://weifo.github.io/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://weifo.github.io/2018/10/01/webpack-babel/</loc>
+    <lastmod>2020-03-15T13:18:45.820Z</lastmod>
+    <data>
+        <display>
+        <title>webpack - babel篇</title>
+        <pubTime>2018-10-01T06:23:24.000Z</pubTime>
+        
+        <tag>webpack</tag>
+         
+         
+           
+             
+              <breadCrumb title="webpack" url="https://weifo.github.io/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://weifo.github.io/2020/01/06/vue-life-hooks/</loc>
+    <lastmod>2020-03-15T13:18:37.747Z</lastmod>
+    <data>
+        <display>
+        <title>Vue 生命周期</title>
+        <pubTime>2020-01-06T02:30:09.000Z</pubTime>
+        
+        <tag>Vue</tag>
+         
+         
+           
+             
+              <breadCrumb title="Javascript" url="https://weifo.github.io/categories/Javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://weifo.github.io/2020/02/10/react-redux/</loc>
+    <lastmod>2020-03-15T13:18:27.842Z</lastmod>
+    <data>
+        <display>
+        <title>react-redux</title>
+        <pubTime>2020-02-10T14:42:05.000Z</pubTime>
+        
+        <tag>React</tag>
+         
+         
+           
+             
+              <breadCrumb title="React" url="https://weifo.github.io/categories/React/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://weifo.github.io/2020/02/08/react-hooks/</loc>
+    <lastmod>2020-03-15T13:18:17.505Z</lastmod>
+    <data>
+        <display>
+        <title>react - hooks(v16.7)</title>
+        <pubTime>2020-02-08T07:30:32.000Z</pubTime>
+        
+        <tag>React</tag>
+         
+         
+           
+             
+              <breadCrumb title="React" url="https://weifo.github.io/categories/React/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://weifo.github.io/2018/11/21/http-TCP/</loc>
+    <lastmod>2020-03-15T13:18:03.619Z</lastmod>
+    <data>
+        <display>
+        <title>HTTP - TCP 三次握手四次挥手</title>
+        <pubTime>2018-11-21T01:47:17.000Z</pubTime>
+        
+        <tag>HTTP</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTTP" url="https://weifo.github.io/categories/HTTP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://weifo.github.io/2020/01/23/git-command/</loc>
-    <lastmod>2020-03-15T13:10:06.793Z</lastmod>
+    <lastmod>2020-03-15T13:17:52.912Z</lastmod>
     <data>
         <display>
         <title>git 实用指南</title>
@@ -24,8 +262,28 @@
 
     
   <url>
+    <loc>https://weifo.github.io/2020/01/23/http-cache/</loc>
+    <lastmod>2020-03-15T13:17:46.685Z</lastmod>
+    <data>
+        <display>
+        <title>HTTP - 缓存机制</title>
+        <pubTime>2020-01-23T01:23:23.000Z</pubTime>
+        
+        <tag>HTTP</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTTP" url="https://weifo.github.io/categories/HTTP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://weifo.github.io/2020/01/21/es6-map&set/</loc>
-    <lastmod>2020-03-15T13:09:56.873Z</lastmod>
+    <lastmod>2020-03-15T13:17:40.812Z</lastmod>
     <data>
         <display>
         <title>ES6 - Map 和 Set</title>
@@ -47,7 +305,7 @@
     
   <url>
     <loc>https://weifo.github.io/2020/01/20/es6-generator/</loc>
-    <lastmod>2020-03-15T13:09:47.435Z</lastmod>
+    <lastmod>2020-03-15T13:17:33.267Z</lastmod>
     <data>
         <display>
         <title>ES6 - generator</title>
@@ -69,7 +327,7 @@
     
   <url>
     <loc>https://weifo.github.io/2020/01/16/es6-class/</loc>
-    <lastmod>2020-03-15T13:09:37.694Z</lastmod>
+    <lastmod>2020-03-15T13:17:25.963Z</lastmod>
     <data>
         <display>
         <title>ES6 - Class</title>
@@ -91,7 +349,7 @@
     
   <url>
     <loc>https://weifo.github.io/2020/01/12/es6-async&await/</loc>
-    <lastmod>2020-03-15T13:09:27.173Z</lastmod>
+    <lastmod>2020-03-15T13:17:20.142Z</lastmod>
     <data>
         <display>
         <title>ES6 - async await</title>
@@ -105,6 +363,26 @@
            
              
               <breadCrumb title="Javascript" url="https://weifo.github.io/categories/Javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://weifo.github.io/2020/01/03/copy/</loc>
+    <lastmod>2020-03-15T13:17:06.140Z</lastmod>
+    <data>
+        <display>
+        <title>Sequelize - 使用 model 查询数据</title>
+        <pubTime>2020-01-03T06:56:03.000Z</pubTime>
+        
+        <tag>Sequelize</tag>
+         
+         
+           
+             
+              <breadCrumb title="Sequelize" url="https://weifo.github.io/categories/Sequelize/"/>
           
         </display>
     </data>
@@ -152,46 +430,6 @@
 
     
   <url>
-    <loc>https://weifo.github.io/2020/02/10/react-redux/</loc>
-    <lastmod>2020-03-15T12:53:33.556Z</lastmod>
-    <data>
-        <display>
-        <title>react-redux</title>
-        <pubTime>2020-02-10T14:42:05.000Z</pubTime>
-        
-        <tag>React</tag>
-         
-         
-           
-             
-              <breadCrumb title="React" url="https://weifo.github.io/categories/React/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://weifo.github.io/2020/02/08/react-hooks/</loc>
-    <lastmod>2020-03-15T12:52:47.695Z</lastmod>
-    <data>
-        <display>
-        <title>react - hooks(v16.7)</title>
-        <pubTime>2020-02-08T07:30:32.000Z</pubTime>
-        
-        <tag>React</tag>
-         
-         
-           
-             
-              <breadCrumb title="React" url="https://weifo.github.io/categories/React/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://weifo.github.io/2020/02/02/react-basic/</loc>
     <lastmod>2020-03-15T12:52:03.694Z</lastmod>
     <data>
@@ -211,224 +449,6 @@
     </url>
 
     
-  <url>
-    <loc>https://weifo.github.io/2020/01/06/vue-life-hooks/</loc>
-    <lastmod>2020-03-12T19:13:37.631Z</lastmod>
-    <data>
-        <display>
-        <title>Vue 生命周期</title>
-        <pubTime>2020-01-06T02:30:09.000Z</pubTime>
-        
-        <tag>Vue</tag>
-         
-         
-           
-             
-              <breadCrumb title="Javascript" url="https://weifo.github.io/categories/Javascript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>https://weifo.github.io/2020/01/03/copy/</loc>
-    <lastmod>2020-03-12T14:16:02.596Z</lastmod>
-    <data>
-        <display>
-        <title>Sequelize - 使用 model 查询数据</title>
-        <pubTime>2020-01-03T06:56:03.000Z</pubTime>
-        
-        <tag>Sequelize</tag>
-         
-         
-           
-             
-              <breadCrumb title="Sequelize" url="https://weifo.github.io/categories/Sequelize/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://weifo.github.io/2020/01/23/http-cache/</loc>
-    <lastmod>2020-03-08T07:56:42.195Z</lastmod>
-    <data>
-        <display>
-        <title>HTTP - 缓存机制</title>
-        <pubTime>2020-01-23T01:23:23.000Z</pubTime>
-        
-        <tag>HTTP</tag>
-         
-         
-           
-             
-              <breadCrumb title="HTTP" url="https://weifo.github.io/categories/HTTP/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://weifo.github.io/2018/10/01/webpack-babel/</loc>
-    <lastmod>2020-02-16T13:25:39.050Z</lastmod>
-    <data>
-        <display>
-        <title>webpack - babel篇</title>
-        <pubTime>2018-10-01T06:23:24.000Z</pubTime>
-        
-        <tag>webpack</tag>
-         
-         
-           
-             
-              <breadCrumb title="webpack" url="https://weifo.github.io/categories/webpack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://weifo.github.io/2019/10/12/webpack-plugins/</loc>
-    <lastmod>2020-02-16T13:25:04.014Z</lastmod>
-    <data>
-        <display>
-        <title>webpack-plugins</title>
-        <pubTime>2019-10-12T13:43:08.000Z</pubTime>
-        
-        <tag>webpack</tag>
-         
-         
-           
-             
-              <breadCrumb title="webpack" url="https://weifo.github.io/categories/webpack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://weifo.github.io/2019/10/11/webpack-theory/</loc>
-    <lastmod>2020-02-16T13:24:45.730Z</lastmod>
-    <data>
-        <display>
-        <title>webpack - 理论篇</title>
-        <pubTime>2019-10-11T03:15:56.000Z</pubTime>
-        
-        <tag>webpack</tag>
-         
-         
-           
-             
-              <breadCrumb title="webpack" url="https://weifo.github.io/categories/webpack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://weifo.github.io/2019/07/10/%E9%9A%8F%E7%AC%94-%E9%87%8D%E6%8E%92%E5%92%8C%E9%87%8D%E7%BB%98/</loc>
-    <lastmod>2020-02-16T13:24:20.099Z</lastmod>
-    <data>
-        <display>
-        <title>页面重绘和回流以及优化</title>
-        <pubTime>2019-07-10T12:51:52.000Z</pubTime>
-        
-        <tag>DOM</tag>
-         
-         
-           
-             
-              <breadCrumb title="开发随笔" url="https://weifo.github.io/categories/%E5%BC%80%E5%8F%91%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://weifo.github.io/2019/07/11/%E9%9A%8F%E7%AC%94-%E9%9D%A2%E8%AF%952/</loc>
-    <lastmod>2020-02-16T13:24:05.085Z</lastmod>
-    <data>
-        <display>
-        <title>js - 笔试题收集</title>
-        <pubTime>2019-07-11T11:57:47.000Z</pubTime>
-        
-        <tag>面试系列</tag>
-         
-         
-           
-             
-              <breadCrumb title="开发随笔" url="https://weifo.github.io/categories/%E5%BC%80%E5%8F%91%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://weifo.github.io/2019/12/12/%E9%9A%8F%E7%AC%94-%E5%A6%82%E4%BD%95%E7%94%A8es6+%E5%86%99%E5%87%BA%E4%BC%98%E9%9B%85%E7%9A%84js%E4%BB%A3%E7%A0%81/</loc>
-    <lastmod>2020-02-16T13:23:34.829Z</lastmod>
-    <data>
-        <display>
-        <title>随笔 - 如何用es6+写出优雅的js代码</title>
-        <pubTime>2019-12-12T01:59:21.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="开发随笔" url="https://weifo.github.io/categories/%E5%BC%80%E5%8F%91%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://weifo.github.io/2019/07/16/%E9%9A%8F%E7%AC%94-%E9%9D%A2%E8%AF%95/</loc>
-    <lastmod>2020-02-16T13:23:05.983Z</lastmod>
-    <data>
-        <display>
-        <title>面试题积累</title>
-        <pubTime>2019-07-16T12:46:54.000Z</pubTime>
-        
-        <tag>面试系列</tag>
-         
-         
-           
-             
-              <breadCrumb title="开发随笔" url="https://weifo.github.io/categories/%E5%BC%80%E5%8F%91%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://weifo.github.io/2019/10/10/webpack-%E5%85%A5%E9%97%A8/</loc>
-    <lastmod>2020-02-16T13:22:47.303Z</lastmod>
-    <data>
-        <display>
-        <title>webpack - 入门篇</title>
-        <pubTime>2019-10-10T14:09:14.000Z</pubTime>
-        
-        <tag>webpack</tag>
-         
-         
-           
-             
-              <breadCrumb title="webpack" url="https://weifo.github.io/categories/webpack/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>https://weifo.github.io/2019/11/14/deepclone/</loc>
@@ -470,26 +490,6 @@
     </url>
 
     
-    
-  <url>
-    <loc>https://weifo.github.io/2018/11/21/http-TCP/</loc>
-    <lastmod>2019-03-18T15:39:40.000Z</lastmod>
-    <data>
-        <display>
-        <title>HTTP - TCP 三次握手四次挥手</title>
-        <pubTime>2018-11-21T01:47:17.000Z</pubTime>
-        
-        <tag>HTTP</tag>
-         
-         
-           
-             
-              <breadCrumb title="HTTP" url="https://weifo.github.io/categories/HTTP/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
     
     
