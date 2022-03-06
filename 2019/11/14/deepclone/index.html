@@ -6,10 +6,10 @@
 
 
 <html class="theme-next gemini use-motion" lang="zh-CN">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
 
 
@@ -20,8 +20,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -40,7 +40,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
 
 
 
@@ -48,9 +48,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
@@ -68,13 +68,13 @@
 
 
 
-  <meta name="keywords" content="javascript," />
+  <meta name="keywords" content="javascript,">
 
 
 
 
 
-  <link rel="alternate" href="/atom.xml" title="weifo" type="application/atom+xml" />
+  <link rel="alternate" href="/atom.xml" title="weifo" type="application/atom+xml">
 
 
 
@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="weifo">
 <meta property="og:description" content="深拷贝与浅拷贝的含义首先要知道在js的世界中，有两种类型的值，分别是基础类型和引用类型。基础类型包括string,number,boolean,Symbol,undefined,null,引用类型包括array,object等。  基本数据类型：直接存储在栈（stack）中的数据 引用数据类型：在栈中存放的是指针，真实的数据存放在堆中。  首先要分清拷贝和赋值的区别引用类型的赋值是直接赋值了一个指">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-30T05:40:26.649Z">
+<meta property="og:updated_time" content="2019-11-30T05:40:28.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="包学不会的深拷贝与浅拷贝">
 <meta name="twitter:description" content="深拷贝与浅拷贝的含义首先要知道在js的世界中，有两种类型的值，分别是基础类型和引用类型。基础类型包括string,number,boolean,Symbol,undefined,null,引用类型包括array,object等。  基本数据类型：直接存储在栈（stack）中的数据 引用数据类型：在栈中存放的是指针，真实的数据存放在堆中。  首先要分清拷贝和赋值的区别引用类型的赋值是直接赋值了一个指">
@@ -122,7 +122,7 @@
 
 
 
-  <link rel="canonical" href="https://weifo.github.io/2019/11/14/deepclone/"/>
+  <link rel="canonical" href="https://weifo.github.io/2019/11/14/deepclone/">
 
 
 
@@ -156,7 +156,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">weifo</span>
         <span class="logo-line-after"><i></i></span>
@@ -186,7 +186,7 @@
         <li class="menu-item menu-item-首页">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
             首页
           </a>
@@ -196,7 +196,7 @@
         <li class="menu-item menu-item-存档">
           <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
             存档
           </a>
@@ -206,7 +206,7 @@
         <li class="menu-item menu-item-分类">
           <a href="/categories/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
             分类
           </a>
@@ -216,7 +216,7 @@
         <li class="menu-item menu-item-标签">
           <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
             标签
           </a>
@@ -229,7 +229,7 @@
             <a href="javascript:;" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
             
             Search
           </a>
@@ -250,9 +250,7 @@
       <i class="fa fa-times-circle"></i>
     </span>
     <div class="local-search-input-wrapper">
-      <input autocomplete="off"
-             placeholder="Searching..." spellcheck="false"
-             type="text" id="local-search-input">
+      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
     </div>
   </div>
   <div id="local-search-result"></div>
@@ -293,7 +291,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="weifo">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
@@ -329,7 +327,7 @@
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -548,9 +546,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image"
-                src="/images/avatar.jpg"
-                alt="weifo" />
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="weifo">
             
               <p class="site-author-name" itemprop="name">weifo</p>
               <p class="site-description motion-element" itemprop="description">电音爱好者</p>
@@ -563,7 +559,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">24</span>
+                  <span class="site-state-item-count">25</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -574,7 +570,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -585,7 +581,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -635,7 +631,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#深拷贝与浅拷贝的含义"><span class="nav-number">1.</span> <span class="nav-text">深拷贝与浅拷贝的含义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何实现浅拷贝"><span class="nav-number">2.</span> <span class="nav-text">如何实现浅拷贝</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#数组的浅拷贝"><span class="nav-number">2.0.1.</span> <span class="nav-text">数组的浅拷贝</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#对象的浅拷贝"><span class="nav-number">2.0.2.</span> <span class="nav-text">对象的浅拷贝</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#深拷贝的实现"><span class="nav-number">3.</span> <span class="nav-text">深拷贝的实现</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#深拷贝与浅拷贝的含义"><span class="nav-number">1.</span> <span class="nav-text">深拷贝与浅拷贝的含义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何实现浅拷贝"><span class="nav-number">2.</span> <span class="nav-text">如何实现浅拷贝</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#数组的浅拷贝"><span class="nav-number">2.0.1.</span> <span class="nav-text">数组的浅拷贝</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#对象的浅拷贝"><span class="nav-number">2.0.2.</span> <span class="nav-text">对象的浅拷贝</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#深拷贝的实现"><span class="nav-number">3.</span> <span class="nav-text">深拷贝的实现</span></a></li></div>
             
 
           </div>
@@ -655,7 +651,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

@@ -2,191 +2,191 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://weifo.github.io/2022/03/03/react%20hooks1/</loc>
+    
+    <lastmod>2022-03-06T12:10:25.444Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://weifo.github.io/2019/07/10/%E9%9A%8F%E7%AC%94-%E9%87%8D%E6%8E%92%E5%92%8C%E9%87%8D%E7%BB%98/</loc>
     
-    <lastmod>2020-03-15T13:19:56.578Z</lastmod>
+    <lastmod>2020-03-15T13:19:58.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://weifo.github.io/2019/12/12/%E9%9A%8F%E7%AC%94-%E5%A6%82%E4%BD%95%E7%94%A8es6+%E5%86%99%E5%87%BA%E4%BC%98%E9%9B%85%E7%9A%84js%E4%BB%A3%E7%A0%81/</loc>
     
-    <lastmod>2020-03-15T13:19:47.993Z</lastmod>
+    <lastmod>2020-03-15T13:19:48.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://weifo.github.io/2019/07/11/%E9%9A%8F%E7%AC%94-%E9%9D%A2%E8%AF%952/</loc>
     
-    <lastmod>2020-03-15T13:19:41.868Z</lastmod>
+    <lastmod>2020-03-15T13:19:42.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://weifo.github.io/2019/07/16/%E9%9A%8F%E7%AC%94-%E9%9D%A2%E8%AF%95/</loc>
     
-    <lastmod>2020-03-15T13:19:30.476Z</lastmod>
+    <lastmod>2020-03-15T13:19:32.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://weifo.github.io/2019/10/10/webpack-%E5%85%A5%E9%97%A8/</loc>
     
-    <lastmod>2020-03-15T13:19:10.088Z</lastmod>
+    <lastmod>2020-03-15T13:19:12.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://weifo.github.io/2019/10/11/webpack-theory/</loc>
     
-    <lastmod>2020-03-15T13:18:57.339Z</lastmod>
+    <lastmod>2020-03-15T13:18:58.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://weifo.github.io/2019/10/12/webpack-plugins/</loc>
     
-    <lastmod>2020-03-15T13:18:52.020Z</lastmod>
+    <lastmod>2020-03-15T13:18:54.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://weifo.github.io/2018/10/01/webpack-babel/</loc>
     
-    <lastmod>2020-03-15T13:18:45.820Z</lastmod>
+    <lastmod>2020-03-15T13:18:46.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://weifo.github.io/2020/01/06/vue-life-hooks/</loc>
     
-    <lastmod>2020-03-15T13:18:37.747Z</lastmod>
+    <lastmod>2020-03-15T13:18:38.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://weifo.github.io/2020/02/10/react-redux/</loc>
     
-    <lastmod>2020-03-15T13:18:27.842Z</lastmod>
+    <lastmod>2020-03-15T13:18:28.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://weifo.github.io/2020/02/08/react-hooks/</loc>
     
-    <lastmod>2020-03-15T13:18:17.505Z</lastmod>
+    <lastmod>2020-03-15T13:18:18.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://weifo.github.io/2018/11/21/http-TCP/</loc>
     
-    <lastmod>2020-03-15T13:18:03.619Z</lastmod>
+    <lastmod>2020-03-15T13:18:04.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://weifo.github.io/2020/01/23/git-command/</loc>
     
-    <lastmod>2020-03-15T13:17:52.912Z</lastmod>
+    <lastmod>2020-03-15T13:17:54.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://weifo.github.io/2020/01/23/http-cache/</loc>
     
-    <lastmod>2020-03-15T13:17:46.685Z</lastmod>
+    <lastmod>2020-03-15T13:17:48.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://weifo.github.io/2020/01/21/es6-map&set/</loc>
     
-    <lastmod>2020-03-15T13:17:40.812Z</lastmod>
+    <lastmod>2020-03-15T13:17:42.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://weifo.github.io/2020/01/20/es6-generator/</loc>
     
-    <lastmod>2020-03-15T13:17:33.267Z</lastmod>
+    <lastmod>2020-03-15T13:17:34.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://weifo.github.io/2020/01/16/es6-class/</loc>
     
-    <lastmod>2020-03-15T13:17:25.963Z</lastmod>
+    <lastmod>2020-03-15T13:17:26.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://weifo.github.io/2020/01/12/es6-async&await/</loc>
     
-    <lastmod>2020-03-15T13:17:20.142Z</lastmod>
+    <lastmod>2020-03-15T13:17:22.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://weifo.github.io/2020/01/03/copy/</loc>
     
-    <lastmod>2020-03-15T13:17:06.140Z</lastmod>
+    <lastmod>2020-03-15T13:17:08.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://weifo.github.io/2020/02/05/react-LifeCycle/</loc>
     
-    <lastmod>2020-03-15T13:09:01.437Z</lastmod>
+    <lastmod>2020-03-15T13:09:02.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://weifo.github.io/2020/02/03/react-context/</loc>
     
-    <lastmod>2020-03-15T13:08:42.690Z</lastmod>
+    <lastmod>2020-03-15T13:08:44.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://weifo.github.io/2020/02/02/react-basic/</loc>
     
-    <lastmod>2020-03-15T12:52:03.694Z</lastmod>
+    <lastmod>2020-03-15T12:52:04.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://weifo.github.io/about/index.html</loc>
     
-    <lastmod>2020-03-12T14:22:55.724Z</lastmod>
+    <lastmod>2020-03-12T14:22:56.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://weifo.github.io/2019/11/14/deepclone/</loc>
     
-    <lastmod>2019-11-30T05:40:26.649Z</lastmod>
+    <lastmod>2019-11-30T05:40:28.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://weifo.github.io/2019/11/14/ts_basic/</loc>
     
-    <lastmod>2019-11-18T08:04:06.881Z</lastmod>
+    <lastmod>2019-11-18T08:04:08.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://weifo.github.io//404.html</loc>
     
-    <lastmod>2019-11-11T15:42:38.854Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://weifo.github.io/books/index.html</loc>
-    
-    <lastmod>2019-03-18T15:39:40.000Z</lastmod>
+    <lastmod>2019-11-11T15:42:40.000Z</lastmod>
     
   </url>
   
@@ -199,6 +199,13 @@
   
   <url>
     <loc>https://weifo.github.io/repository/index.html</loc>
+    
+    <lastmod>2019-03-18T15:39:40.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://weifo.github.io/books/index.html</loc>
     
     <lastmod>2019-03-18T15:39:40.000Z</lastmod>
     

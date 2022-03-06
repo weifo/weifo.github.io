@@ -6,10 +6,10 @@
 
 
 <html class="theme-next gemini use-motion" lang="zh-CN">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
 
 
@@ -20,8 +20,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -40,7 +40,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
 
 
 
@@ -48,9 +48,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
@@ -68,13 +68,13 @@
 
 
 
-  <meta name="keywords" content="React," />
+  <meta name="keywords" content="React,">
 
 
 
 
 
-  <link rel="alternate" href="/atom.xml" title="weifo" type="application/atom+xml" />
+  <link rel="alternate" href="/atom.xml" title="weifo" type="application/atom+xml">
 
 
 
@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="weifo">
 <meta property="og:description" content="简单使用Context 设计目的是为共享那些被认为对于一个组件树而言是“全局”的数据，你可以看做为 redux，因为 redux 也是通过这个东东实现的。 1234567891011121314151617181920212223242526import React, &amp;#123; Component &amp;#125; from &apos;react&apos;/** * 1. 创建 context * 2. 根组件">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-03-15T13:08:42.690Z">
+<meta property="og:updated_time" content="2020-03-15T13:08:44.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="react-context">
 <meta name="twitter:description" content="简单使用Context 设计目的是为共享那些被认为对于一个组件树而言是“全局”的数据，你可以看做为 redux，因为 redux 也是通过这个东东实现的。 1234567891011121314151617181920212223242526import React, &amp;#123; Component &amp;#125; from &apos;react&apos;/** * 1. 创建 context * 2. 根组件">
@@ -122,7 +122,7 @@
 
 
 
-  <link rel="canonical" href="https://weifo.github.io/2020/02/03/react-context/"/>
+  <link rel="canonical" href="https://weifo.github.io/2020/02/03/react-context/">
 
 
 
@@ -156,7 +156,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">weifo</span>
         <span class="logo-line-after"><i></i></span>
@@ -186,7 +186,7 @@
         <li class="menu-item menu-item-首页">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
             首页
           </a>
@@ -196,7 +196,7 @@
         <li class="menu-item menu-item-存档">
           <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
             存档
           </a>
@@ -206,7 +206,7 @@
         <li class="menu-item menu-item-分类">
           <a href="/categories/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
             分类
           </a>
@@ -216,7 +216,7 @@
         <li class="menu-item menu-item-标签">
           <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
             标签
           </a>
@@ -229,7 +229,7 @@
             <a href="javascript:;" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
             
             Search
           </a>
@@ -250,9 +250,7 @@
       <i class="fa fa-times-circle"></i>
     </span>
     <div class="local-search-input-wrapper">
-      <input autocomplete="off"
-             placeholder="Searching..." spellcheck="false"
-             type="text" id="local-search-input">
+      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
     </div>
   </div>
   <div id="local-search-result"></div>
@@ -293,7 +291,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="weifo">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
@@ -329,7 +327,7 @@
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -377,7 +375,7 @@
 
       
         <h2 id="简单使用"><a href="#简单使用" class="headerlink" title="简单使用"></a>简单使用</h2><p><code>Context</code> 设计目的是为共享那些被认为对于一个组件树而言是“全局”的数据，你可以看做为 <code>redux</code>，因为 <code>redux</code> 也是通过这个东东实现的。</p>
-<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 1. 创建 context</span></span><br><span class="line"><span class="comment"> * 2. 根组件 App 包裹 MyContext.Provider</span></span><br><span class="line"><span class="comment"> * 3. App =&gt; Father =&gt; Child =&gt; MyContext.Consumer =&gt; context.age 取出结果</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">const</span> MyContext = React.createContext()</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Child = <span class="function"><span class="params">()</span> =&gt;</span> (</span><br><span class="line">  &lt;MyContext.Consumer&gt;&#123;(&#123; age &#125;) =&gt; &lt;p&gt;My age is &#123;age&#125;&lt;/p&gt;&#125;&lt;<span class="regexp">/MyContext.Consumer&gt;</span></span><br><span class="line"><span class="regexp">)</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">const Father = () =&gt; &lt;Child /</span>&gt;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">App</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</span><br><span class="line">  render() &#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      &lt;MyContext.Provider value=&#123;&#123; <span class="attr">age</span>: <span class="number">22</span> &#125;&#125;&gt;</span><br><span class="line">        &lt;Father /&gt;</span><br><span class="line">      &lt;<span class="regexp">/MyContext.Provider&gt;</span></span><br><span class="line"><span class="regexp">    )</span></span><br><span class="line"><span class="regexp">  &#125;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">export default App</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 1. 创建 context</span></span><br><span class="line"><span class="comment"> * 2. 根组件 App 包裹 MyContext.Provider</span></span><br><span class="line"><span class="comment"> * 3. App =&gt; Father =&gt; Child =&gt; MyContext.Consumer =&gt; context.age 取出结果</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">const</span> MyContext = React.createContext()</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Child = <span class="function"><span class="params">()</span> =&gt;</span> (</span><br><span class="line">  &lt;MyContext.Consumer&gt;&#123;(&#123; age &#125;) =&gt; <span class="xml"><span class="tag">&lt;<span class="name">p</span>&gt;</span>My age is &#123;age&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span>&#125;&lt;<span class="regexp">/MyContext.Consumer&gt;</span></span><br><span class="line"><span class="regexp">)</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">const Father = () =&gt; &lt;Child /</span>&gt;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">App</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</span><br><span class="line">  render() &#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      &lt;MyContext.Provider value=&#123;&#123; <span class="attr">age</span>: <span class="number">22</span> &#125;&#125;&gt;</span><br><span class="line">        &lt;Father /&gt;</span><br><span class="line">      &lt;<span class="regexp">/MyContext.Provider&gt;</span></span><br><span class="line"><span class="regexp">    )</span></span><br><span class="line"><span class="regexp">  &#125;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">export default App</span></span><br></pre></td></tr></table></figure>
 <a id="more"></a>
 <h2 id="理论知识"><a href="#理论知识" class="headerlink" title="理论知识"></a>理论知识</h2><h3 id="React-createContext"><a href="#React-createContext" class="headerlink" title="React.createContext"></a>React.createContext</h3><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> &#123; Provider, Consumer &#125; = React.createContext(defaultValue)</span><br></pre></td></tr></table></figure>
 <p>创建一对 { <code>Provider</code>, <code>Consumer</code> }。当 React 渲染 <code>context</code> 组件 <code>Consumer</code> 时，它将从组件树的上层中最接近的匹配的 <code>Provider</code> 读取当前的 <code>context</code> 值。</p>
@@ -387,9 +385,9 @@
 <p>一个可以订阅 <code>context</code> 变化的 React 组件。</p>
 <p>注意，<code>MyContext.Consumer</code> 使用的是 <code>render props</code> 这种模式，<code>render props</code> 模式指的是让 <code>prop</code> 可以是一个 <code>render</code> 函数</p>
 <h2 id="父子耦合"><a href="#父子耦合" class="headerlink" title="父子耦合"></a>父子耦合</h2><p>经常需要从组件树中某个深度嵌套的组件中更新 <code>context</code>。在这种情况下，可以通过 <code>context</code> 向下传递一个函数，以允许 <code>Consumer</code> 更新 <code>context</code> ：</p>
-<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> MyContext = React.createContext()</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Child = <span class="function"><span class="params">()</span> =&gt;</span> (</span><br><span class="line">  &lt;MyContext.Consumer&gt;</span><br><span class="line">     &#123;ctx =&gt; (</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">        &lt;p&gt;My age is &#123;ctx.age&#125;&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">        &lt;button onClick=&#123;ctx.changeAge&#125;&gt;changeAge&lt;/</span>button&gt;</span><br><span class="line">      &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">    )&#125;</span></span><br><span class="line"><span class="regexp">  &lt;/</span>MyContext.Consumer&gt;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Father = <span class="function"><span class="params">()</span> =&gt;</span> &lt;Child /&gt;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">App</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</span><br><span class="line">  state = &#123;</span><br><span class="line">    age: <span class="number">22</span></span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  changeAge = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">this</span>.setState(<span class="function"><span class="params">prevState</span> =&gt;</span> (&#123;</span><br><span class="line">      age: ++prevState.age</span><br><span class="line">    &#125;))</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  render() &#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      &lt;MyContext.Provider value=&#123;&#123;</span><br><span class="line">        age: <span class="keyword">this</span>.state.age,</span><br><span class="line">        changeAge: <span class="keyword">this</span>.changeAge</span><br><span class="line">      &#125;&#125;&gt;</span><br><span class="line">        &lt;Father /&gt;</span><br><span class="line">      &lt;<span class="regexp">/MyContext.Provider&gt;</span></span><br><span class="line"><span class="regexp">    )</span></span><br><span class="line"><span class="regexp">  &#125;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">export default App</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> MyContext = React.createContext()</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Child = <span class="function"><span class="params">()</span> =&gt;</span> (</span><br><span class="line">  &lt;MyContext.Consumer&gt;</span><br><span class="line">     &#123;ctx =&gt; (</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">        &lt;p&gt;My age is &#123;ctx.age&#125;&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">        &lt;button onClick=&#123;ctx.changeAge&#125;&gt;changeAge&lt;/</span>button&gt;</span><br><span class="line">      &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">    )&#125;</span></span><br><span class="line"><span class="regexp">  &lt;/</span>MyContext.Consumer&gt;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Father = <span class="function"><span class="params">()</span> =&gt;</span> <span class="xml"><span class="tag">&lt;<span class="name">Child</span> /&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">App</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</span><br><span class="line">  state = &#123;</span><br><span class="line">    age: <span class="number">22</span></span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  changeAge = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">this</span>.setState(<span class="function"><span class="params">prevState</span> =&gt;</span> (&#123;</span><br><span class="line">      age: ++prevState.age</span><br><span class="line">    &#125;))</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  render() &#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      &lt;MyContext.Provider value=&#123;&#123;</span><br><span class="line">        age: <span class="keyword">this</span>.state.age,</span><br><span class="line">        changeAge: <span class="keyword">this</span>.changeAge</span><br><span class="line">      &#125;&#125;&gt;</span><br><span class="line">        &lt;Father /&gt;</span><br><span class="line">      &lt;<span class="regexp">/MyContext.Provider&gt;</span></span><br><span class="line"><span class="regexp">    )</span></span><br><span class="line"><span class="regexp">  &#125;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">export default App</span></span><br></pre></td></tr></table></figure>
 <h2 id="作用于多个上下文"><a href="#作用于多个上下文" class="headerlink" title="作用于多个上下文"></a>作用于多个上下文</h2><p>为了保持 <code>context</code> 快速进行二次渲染， <code>React</code> 需要使每一个 <code>Consumer</code> 在组件树中成为一个单独的节点。</p>
-<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> MyContext = React.createContext()</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> UserContext = React.createContext()</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Child = <span class="function"><span class="params">()</span> =&gt;</span> (</span><br><span class="line">  &lt;MyContext.Consumer&gt;</span><br><span class="line">    &#123;ctx =&gt; (</span><br><span class="line">      &lt;UserContext.Consumer&gt;</span><br><span class="line">        &#123;user =&gt; (</span><br><span class="line">          &lt;div&gt;</span><br><span class="line">            &lt;p&gt;My name is &#123;user.name&#125;&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">            &lt;p&gt;My age is &#123;ctx.age&#125;&lt;/</span>p&gt;</span><br><span class="line">            &lt;button onClick=&#123;ctx.changeAge&#125;&gt;changeAge&lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">          &lt;/</span>div&gt;</span><br><span class="line">        )&#125;</span><br><span class="line">      &lt;<span class="regexp">/UserContext.Consumer&gt;</span></span><br><span class="line"><span class="regexp">    )&#125;</span></span><br><span class="line"><span class="regexp">  &lt;/</span>MyContext.Consumer&gt;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Father = <span class="function"><span class="params">()</span> =&gt;</span> &lt;Child /&gt;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">App</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</span><br><span class="line">  state = &#123;</span><br><span class="line">    age: <span class="number">22</span>,</span><br><span class="line">    name: <span class="string">'郭大大'</span></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  changeAge = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">this</span>.setState(<span class="function"><span class="params">prevState</span> =&gt;</span> (&#123;</span><br><span class="line">      age: ++prevState.age</span><br><span class="line">    &#125;))</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  render() &#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      &lt;MyContext.Provider</span><br><span class="line">        value=&#123;&#123;</span><br><span class="line">          age: <span class="keyword">this</span>.state.age,</span><br><span class="line">          changeAge: <span class="keyword">this</span>.changeAge</span><br><span class="line">        &#125;&#125;&gt;</span><br><span class="line">        &lt;UserContext.Provider value=&#123;&#123; <span class="attr">name</span>: <span class="keyword">this</span>.state.name &#125;&#125;&gt;</span><br><span class="line">          &lt;Father /&gt;</span><br><span class="line">        &lt;<span class="regexp">/UserContext.Provider&gt;</span></span><br><span class="line"><span class="regexp">      &lt;/</span>MyContext.Provider&gt;</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> App</span><br></pre></td></tr></table></figure>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> MyContext = React.createContext()</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> UserContext = React.createContext()</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Child = <span class="function"><span class="params">()</span> =&gt;</span> (</span><br><span class="line">  &lt;MyContext.Consumer&gt;</span><br><span class="line">    &#123;ctx =&gt; (</span><br><span class="line">      &lt;UserContext.Consumer&gt;</span><br><span class="line">        &#123;user =&gt; (</span><br><span class="line">          &lt;div&gt;</span><br><span class="line">            &lt;p&gt;My name is &#123;user.name&#125;&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">            &lt;p&gt;My age is &#123;ctx.age&#125;&lt;/</span>p&gt;</span><br><span class="line">            &lt;button onClick=&#123;ctx.changeAge&#125;&gt;changeAge&lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">          &lt;/</span>div&gt;</span><br><span class="line">        )&#125;</span><br><span class="line">      &lt;<span class="regexp">/UserContext.Consumer&gt;</span></span><br><span class="line"><span class="regexp">    )&#125;</span></span><br><span class="line"><span class="regexp">  &lt;/</span>MyContext.Consumer&gt;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Father = <span class="function"><span class="params">()</span> =&gt;</span> <span class="xml"><span class="tag">&lt;<span class="name">Child</span> /&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">App</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</span><br><span class="line">  state = &#123;</span><br><span class="line">    age: <span class="number">22</span>,</span><br><span class="line">    name: <span class="string">'郭大大'</span></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  changeAge = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">this</span>.setState(<span class="function"><span class="params">prevState</span> =&gt;</span> (&#123;</span><br><span class="line">      age: ++prevState.age</span><br><span class="line">    &#125;))</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  render() &#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      &lt;MyContext.Provider</span><br><span class="line">        value=&#123;&#123;</span><br><span class="line">          age: <span class="keyword">this</span>.state.age,</span><br><span class="line">          changeAge: <span class="keyword">this</span>.changeAge</span><br><span class="line">        &#125;&#125;&gt;</span><br><span class="line">        &lt;UserContext.Provider value=&#123;&#123; <span class="attr">name</span>: <span class="keyword">this</span>.state.name &#125;&#125;&gt;</span><br><span class="line">          &lt;Father /&gt;</span><br><span class="line">        &lt;<span class="regexp">/UserContext.Provider&gt;</span></span><br><span class="line"><span class="regexp">      &lt;/</span>MyContext.Provider&gt;</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> App</span><br></pre></td></tr></table></figure>
 <p>如果两个或者多个上下文的值经常被一起使用，也许你需要考虑你自己渲染属性的组件提供给它们。</p>
 <h2 id="在生命周期方法中访问-Context"><a href="#在生命周期方法中访问-Context" class="headerlink" title="在生命周期方法中访问 Context"></a>在生命周期方法中访问 Context</h2><p>在生命周期方法中从上下文访问值是一种相对常见的用例。而不是将上下文添加到每个生命周期方法中，只需要将它作为一个 <code>props</code> 传递，然后像通常使用 <code>props</code> 一样去使用它。</p>
 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> MyContext = React.createContext()</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Child</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</span><br><span class="line">  </span><br><span class="line">  componentDidMount() &#123;</span><br><span class="line">   <span class="built_in">console</span>.log(<span class="keyword">this</span>.props.ctx) </span><br><span class="line">  &#125;  </span><br><span class="line"></span><br><span class="line">  render() &#123;</span><br><span class="line">    <span class="keyword">const</span> &#123; age, changeAge &#125; = <span class="keyword">this</span>.props.ctx</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">        &lt;p&gt;My age is &#123;age&#125;&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">        &lt;button onClick=&#123;changeAge&#125;&gt;changeAge&lt;/</span>button&gt;</span><br><span class="line">      &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">    )</span></span><br><span class="line"><span class="regexp">  &#125;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">const Father = props =&gt; (</span></span><br><span class="line"><span class="regexp">  &lt;MyContext.Consumer&gt;</span></span><br><span class="line"><span class="regexp">    &#123;ctx =&gt; &lt;Child &#123;...props&#125; ctx=&#123;ctx&#125; /</span>&gt;&#125;</span><br><span class="line">  &lt;<span class="regexp">/MyContext.Consumer&gt;</span></span><br><span class="line"><span class="regexp">)</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">class App extends Component &#123;</span></span><br><span class="line"><span class="regexp">  state = &#123;</span></span><br><span class="line"><span class="regexp">    age: 22</span></span><br><span class="line"><span class="regexp">  &#125;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">  changeAge = () =&gt; &#123;</span></span><br><span class="line"><span class="regexp">    this.setState(prevState =&gt; (&#123;</span></span><br><span class="line"><span class="regexp">      age: ++prevState.age</span></span><br><span class="line"><span class="regexp">    &#125;))</span></span><br><span class="line"><span class="regexp">  &#125;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">  render() &#123;</span></span><br><span class="line"><span class="regexp">    return (</span></span><br><span class="line"><span class="regexp">      &lt;MyContext.Provider</span></span><br><span class="line"><span class="regexp">        value=&#123;&#123;</span></span><br><span class="line"><span class="regexp">          age: this.state.age,</span></span><br><span class="line"><span class="regexp">          changeAge: this.changeAge</span></span><br><span class="line"><span class="regexp">        &#125;&#125;&gt;</span></span><br><span class="line"><span class="regexp">        &lt;Father /</span>&gt;</span><br><span class="line">      &lt;<span class="regexp">/MyContext.Provider&gt;</span></span><br><span class="line"><span class="regexp">    )</span></span><br><span class="line"><span class="regexp">  &#125;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">export default App</span></span><br></pre></td></tr></table></figure>
@@ -517,9 +515,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image"
-                src="/images/avatar.jpg"
-                alt="weifo" />
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="weifo">
             
               <p class="site-author-name" itemprop="name">weifo</p>
               <p class="site-description motion-element" itemprop="description">电音爱好者</p>
@@ -532,7 +528,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">24</span>
+                  <span class="site-state-item-count">25</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -543,7 +539,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -554,7 +550,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -624,7 +620,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

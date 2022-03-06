@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="React,">
 
 
 
@@ -81,17 +81,18 @@
 
 
 
-<meta name="description" content="电音爱好者">
-<meta name="keywords" content="读书 旅行">
-<meta property="og:type" content="website">
-<meta property="og:title" content="weifo">
-<meta property="og:url" content="https://weifo.github.io/archives/2019/12/index.html">
+<meta name="description" content="清除 effect通常，组件卸载时需要清除 effect 创建的诸如订阅或计时器 ID 等资源。要实现这一点，useEffect 函数需返回一个清除函数。也就是说，要想在组件销毁的时候搞一些事情，需要useEffect 末尾返回一个函数，在这个函数里面可以写具体销毁的内容。 看下面的例子，在当前页面里面，页面的标题是’测试title’，当切换到其他页面时，页面的标题变成‘正式title’。 123">
+<meta name="keywords" content="React">
+<meta property="og:type" content="article">
+<meta property="og:title" content="React Hooks使用案例学习">
+<meta property="og:url" content="https://weifo.github.io/2022/03/03/react hooks1/index.html">
 <meta property="og:site_name" content="weifo">
-<meta property="og:description" content="电音爱好者">
+<meta property="og:description" content="清除 effect通常，组件卸载时需要清除 effect 创建的诸如订阅或计时器 ID 等资源。要实现这一点，useEffect 函数需返回一个清除函数。也就是说，要想在组件销毁的时候搞一些事情，需要useEffect 末尾返回一个函数，在这个函数里面可以写具体销毁的内容。 看下面的例子，在当前页面里面，页面的标题是’测试title’，当切换到其他页面时，页面的标题变成‘正式title’。 123">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2022-03-06T12:10:25.444Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="weifo">
-<meta name="twitter:description" content="电音爱好者">
+<meta name="twitter:title" content="React Hooks使用案例学习">
+<meta name="twitter:description" content="清除 effect通常，组件卸载时需要清除 effect 创建的诸如订阅或计时器 ID 等资源。要实现这一点，useEffect 函数需返回一个清除函数。也就是说，要想在组件销毁的时候搞一些事情，需要useEffect 末尾返回一个函数，在这个函数里面可以写具体销毁的内容。 看下面的例子，在当前页面里面，页面的标题是’测试title’，当切换到其他页面时，页面的标题变成‘正式title’。 123">
 
 
 
@@ -121,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="https://weifo.github.io/archives/2019/12/">
+  <link rel="canonical" href="https://weifo.github.io/2022/03/03/react hooks1/">
 
 
 
 
 
-  <title>Archive | weifo</title>
+  <title>React Hooks使用案例学习 | weifo</title>
   
 
 
@@ -146,7 +147,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -272,72 +273,174 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
-
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        Um..! 25 posts in total. Keep on posting.
-      </span>
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
-
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://weifo.github.io/2022/03/03/react hooks1/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="weifo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="weifo">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2019/12/12/随笔-如何用es6+写出优雅的js代码/" itemprop="url">
-              
-                <span itemprop="name">随笔 - 如何用es6+写出优雅的js代码</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">React Hooks使用案例学习</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-12-12T09:59:21+08:00" content="2019-12-12">
-          12-12
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-03-03T09:58:42+08:00">
+                2022-03-03
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/React/" itemprop="url" rel="index">
+                    <span itemprop="name">React</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+      
 
+      
+        <h3 id="清除-effect"><a href="#清除-effect" class="headerlink" title="清除 effect"></a><strong>清除 effect</strong></h3><p>通常，组件卸载时需要清除 effect 创建的诸如订阅或计时器 ID 等资源。要实现这一点，useEffect 函数需返回一个清除函数。也就是说，要想在组件销毁的时候搞一些事情，需要useEffect 末尾返回一个函数，在这个函数里面可以写具体销毁的内容。</p>
+<p>看下面的例子，在当前页面里面，页面的标题是’测试title’，当切换到其他页面时，页面的标题变成‘正式title’。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">import</span> React, &#123; useEffect &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">useDocumentTitle</span>(<span class="params">title</span>) </span>&#123;</span><br><span class="line">useEffect(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">document</span>.title = title;</span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'销毁1————————————————'</span>);</span><br><span class="line">    <span class="built_in">document</span>.title = <span class="string">'正式title'</span>;</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;, [title]);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="function"><span class="keyword">function</span> <span class="title">CheckboxDemo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">useDocumentTitle(<span class="string">'测试title'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="name">div</span> /&gt;</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="监听页面大小变化，网络是否断开"><a href="#监听页面大小变化，网络是否断开" class="headerlink" title="监听页面大小变化，网络是否断开"></a><strong>监听页面大小变化，网络是否断开</strong></h3><p>效果：在组件调用 useWindowSize 时，可以拿到页面大小，并且在浏览器缩放时自动触发组件更新。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">import</span> React, &#123; useEffect, useState &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getSize</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="keyword">return</span> &#123;</span><br><span class="line">    innerHeight: <span class="built_in">window</span>.innerHeight,</span><br><span class="line">    innerWidth: <span class="built_in">window</span>.innerWidth,</span><br><span class="line">    outerHeight: <span class="built_in">window</span>.outerHeight,</span><br><span class="line">    outerWidth: <span class="built_in">window</span>.outerWidth,</span><br><span class="line">&#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">useWindowSize</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="keyword">const</span> [windowSize, setWindowSize] = useState(getSize());</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">handleResize</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    setWindowSize(getSize());</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">useEffect(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">window</span>.addEventListener(<span class="string">'resize'</span>, handleResize);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">window</span>.removeEventListener(<span class="string">'resize'</span>, handleResize);</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;, []);</span><br><span class="line"><span class="keyword">return</span> windowSize;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="function"><span class="keyword">function</span> <span class="title">Demo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="keyword">const</span> windowSize = useWindowSize();</span><br><span class="line"><span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span>页面宽度&#123;windowSize.innerWidth&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="动态注入-css"><a href="#动态注入-css" class="headerlink" title="动态注入 css"></a><strong>动态注入 css</strong></h2><p>效果：在页面注入一段 class，并且当组件销毁时，移除这个 class。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">const</span> className = useCss(&#123;</span><br><span class="line">color: <span class="string">"red"</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">className</span>=<span class="string">&#123;className&#125;</span>&gt;</span>Text.<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span>;</span><br></pre></td></tr></table></figure>
+<p>实现：可以看到，Hooks 方便的地方是在组件销毁时移除副作用，所以我们可以安心的利用 Hooks 做一些副作用。注入 css 自然不必说了，而销毁 css 只要找到注入的那段引用进行销毁即可。</p>
+
+      
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/React/" rel="tag"># React</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/02/10/react-redux/" rel="next" title="react-redux">
+                <i class="fa fa-chevron-left"></i> react-redux
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -365,8 +468,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -445,6 +557,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#清除-effect"><span class="nav-number">1.</span> <span class="nav-text">清除 effect</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#监听页面大小变化，网络是否断开"><span class="nav-number">2.</span> <span class="nav-text">监听页面大小变化，网络是否断开</span></a></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#动态注入-css"><span class="nav-number"></span> <span class="nav-text">动态注入 css</span></a></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -585,6 +713,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
