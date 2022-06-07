@@ -287,6 +287,306 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://weifo.github.io/2019/10/11/webpack-theory/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="weifo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="weifo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/10/11/webpack-theory/" itemprop="url">webpack - 理论篇</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-10-11T11:15:56+08:00">
+                2019-10-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/webpack/" itemprop="url" rel="index">
+                    <span itemprop="name">webpack</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="entry"><a href="#entry" class="headerlink" title="entry"></a>entry</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;String&#125;</span> </span>- String 时 打包为一个文件，默认包名 main.js</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;Array&#125;</span> </span>- Array 时 webpack会把数组里所有文件打包成一个js文件</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;Object&#125;</span> </span>- Object 时 webpack会把对象里的文件分别打包成多个文件</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  entry: <span class="string">'./index.js'</span>,</span><br><span class="line"></span><br><span class="line">  entry: [<span class="string">'./index.js'</span>, <span class="string">'./about.js'</span>],</span><br><span class="line"></span><br><span class="line">  entry: &#123;</span><br><span class="line">    app: <span class="string">'./index.js'</span>,</span><br><span class="line">    about: <span class="string">'./about.js'</span></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  entry: &#123;</span><br><span class="line">    app: <span class="string">'./index.js'</span>,</span><br><span class="line">    vendors: [<span class="string">'jquery'</span>] <span class="comment">// 分离第三方库</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/10/11/webpack-theory/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://weifo.github.io/2019/10/10/webpack-入门/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="weifo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="weifo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/10/10/webpack-入门/" itemprop="url">webpack - 入门篇</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-10-10T22:09:14+08:00">
+                2019-10-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/webpack/" itemprop="url" rel="index">
+                    <span itemprop="name">webpack</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p><img src="https://user-gold-cdn.xitu.io/2018/9/29/1662310b4cdab44f?w=1071&amp;h=604&amp;f=png&amp;s=62218" alt></p>
+<h3 id="什么是-webpack"><a href="#什么是-webpack" class="headerlink" title="什么是 webpack"></a>什么是 webpack</h3><p>webpack 可以看做是模块打包机：他做的事情是，分析你的项目结构，找到 <code>JavaScript</code> 模块以及其他的一些浏览器不能直接运行的扩展语言（<code>Scss</code>、<code>TypeScript</code> 等），将其打包为合适的格式以供浏览器使用</p>
+<p>构建就是把源代码转换成发布到线上可执行的 <code>JavaScript</code>、CSS、HTML 代码，包括以下内容：</p>
+<ul>
+<li><strong>代码转换</strong>：<code>TypeScript</code> 编译成 <code>JavaScript</code>、<code>SCSS</code> 编译成 CSS 等等</li>
+<li><strong>文件优化</strong>：压缩 <code>JavaScript</code>、CSS、HTML 代码，压缩合并图片等</li>
+<li><strong>代码分割</strong>：提取多个页面的公共代码、提取首屏不需要执行部分的代码让其异步加载</li>
+<li><strong>模块合并</strong>：在采用模块化的项目有很多模块和文件，需要构建功能把模块分类合并成一个文件</li>
+<li><strong>自动刷新</strong>：监听本地源代码的变化，自动构建，刷新浏览器</li>
+<li><strong>代码校验</strong>：在代码被提交到仓库前需要检测代码是否符合规范，以及单元测试是否通过</li>
+<li><strong>自动发布</strong>：更新完代码后，自动构建出线上发布代码并传输给发布系统。</li>
+</ul>
+<p>构建其实是工程化、自动化思想在前端开发中的体现。把一系列流程用代码去实现，让代码自动化地执行这一系列复杂的流程。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/10/10/webpack-入门/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://weifo.github.io/2019/07/16/随笔-面试/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1077,7 +1377,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">25</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1088,7 +1388,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -1099,7 +1399,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>

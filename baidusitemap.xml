@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://weifo.github.io/2022/05/05/keep-alive/</loc>
+    <lastmod>2022-06-07</lastmod>
+  </url>
+  <url>
+    <loc>https://weifo.github.io/2022/05/03/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E7%AE%80%E4%BB%8B/</loc>
+    <lastmod>2022-06-07</lastmod>
+  </url>
+  <url>
     <loc>https://weifo.github.io/2022/03/03/react%20hooks1/</loc>
     <lastmod>2022-03-06</lastmod>
   </url>
