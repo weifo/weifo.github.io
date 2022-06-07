@@ -205,14 +205,7 @@
   </url>
   
   <url>
-    <loc>https://weifo.github.io/repository/index.html</loc>
-    
-    <lastmod>2019-03-18T15:39:40.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://weifo.github.io/books/index.html</loc>
+    <loc>https://weifo.github.io/categories/index.html</loc>
     
     <lastmod>2019-03-18T15:39:40.000Z</lastmod>
     
@@ -226,7 +219,14 @@
   </url>
   
   <url>
-    <loc>https://weifo.github.io/categories/index.html</loc>
+    <loc>https://weifo.github.io/repository/index.html</loc>
+    
+    <lastmod>2019-03-18T15:39:40.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://weifo.github.io/books/index.html</loc>
     
     <lastmod>2019-03-18T15:39:40.000Z</lastmod>
     
