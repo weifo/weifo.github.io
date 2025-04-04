@@ -81,19 +81,19 @@
 
 
 
-<meta name="description" content="– 说到Vue的钩子函数，可能很多人只停留在一些很简单常用的钩子(created,mounted)，而且对于里面的区别，什么时候该用什么钩子，并没有仔细的去研究过，且Vue的生命周期在面试中也算是比较高频的考点，那么该如何回答这类问题，让人有眼前一亮的感觉呢…  Vue-Router导航守卫：有的时候，我们需要通过路由来进行一些操作，比如最常见的登录权限验证，当用户满足条件时，才让其进入导航，否则">
+<meta name="description" content="– 说到Vue的钩子函数，可能很多人只停留在一些很简单常用的钩子(created,mounted)，而且对于里面的区别，什么时候该用什么钩子，并没有仔细的去研究过，熟悉这些函数后对我们写逻辑时会更有帮助。下面就用代码示例简单介绍下这些钩子吧。  Vue-Router导航守卫：有的时候，我们需要通过路由来进行一些操作，比如最常见的登录权限验证，当用户满足条件时，才让其进入导航，否则就取消跳转，并跳到">
 <meta name="keywords" content="Vue">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Vue Keep-alive中的钩子函数">
 <meta property="og:url" content="https://weifo.github.io/2022/05/05/keep-alive/index.html">
 <meta property="og:site_name" content="weifo">
-<meta property="og:description" content="– 说到Vue的钩子函数，可能很多人只停留在一些很简单常用的钩子(created,mounted)，而且对于里面的区别，什么时候该用什么钩子，并没有仔细的去研究过，且Vue的生命周期在面试中也算是比较高频的考点，那么该如何回答这类问题，让人有眼前一亮的感觉呢…  Vue-Router导航守卫：有的时候，我们需要通过路由来进行一些操作，比如最常见的登录权限验证，当用户满足条件时，才让其进入导航，否则">
+<meta property="og:description" content="– 说到Vue的钩子函数，可能很多人只停留在一些很简单常用的钩子(created,mounted)，而且对于里面的区别，什么时候该用什么钩子，并没有仔细的去研究过，熟悉这些函数后对我们写逻辑时会更有帮助。下面就用代码示例简单介绍下这些钩子吧。  Vue-Router导航守卫：有的时候，我们需要通过路由来进行一些操作，比如最常见的登录权限验证，当用户满足条件时，才让其进入导航，否则就取消跳转，并跳到">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/7/21/164bbf610b61f3cd~tplv-t2oaga2asx-zoom-in-crop-mark:1304:0:0:0.awebp">
-<meta property="og:updated_time" content="2022-06-07T21:50:16.400Z">
+<meta property="og:updated_time" content="2025-03-23T03:37:35.103Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue Keep-alive中的钩子函数">
-<meta name="twitter:description" content="– 说到Vue的钩子函数，可能很多人只停留在一些很简单常用的钩子(created,mounted)，而且对于里面的区别，什么时候该用什么钩子，并没有仔细的去研究过，且Vue的生命周期在面试中也算是比较高频的考点，那么该如何回答这类问题，让人有眼前一亮的感觉呢…  Vue-Router导航守卫：有的时候，我们需要通过路由来进行一些操作，比如最常见的登录权限验证，当用户满足条件时，才让其进入导航，否则">
+<meta name="twitter:description" content="– 说到Vue的钩子函数，可能很多人只停留在一些很简单常用的钩子(created,mounted)，而且对于里面的区别，什么时候该用什么钩子，并没有仔细的去研究过，熟悉这些函数后对我们写逻辑时会更有帮助。下面就用代码示例简单介绍下这些钩子吧。  Vue-Router导航守卫：有的时候，我们需要通过路由来进行一些操作，比如最常见的登录权限验证，当用户满足条件时，才让其进入导航，否则就取消跳转，并跳到">
 <meta name="twitter:image" content="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/7/21/164bbf610b61f3cd~tplv-t2oaga2asx-zoom-in-crop-mark:1304:0:0:0.awebp">
 
 
@@ -377,7 +377,7 @@
 
       
         <p>–</p>
-<p>说到Vue的钩子函数，可能很多人只停留在一些很简单常用的钩子(<code>created</code>,<code>mounted</code>)，而且对于里面的区别，什么时候该用什么钩子，并没有仔细的去研究过，且Vue的生命周期在面试中也算是比较高频的考点，那么该如何回答这类问题，让人有眼前一亮的感觉呢…</p>
+<p>说到Vue的钩子函数，可能很多人只停留在一些很简单常用的钩子(<code>created</code>,<code>mounted</code>)，而且对于里面的区别，什么时候该用什么钩子，并没有仔细的去研究过，熟悉这些函数后对我们写逻辑时会更有帮助。下面就用代码示例简单介绍下这些钩子吧。</p>
 <hr>
 <h2 id="Vue-Router导航守卫："><a href="#Vue-Router导航守卫：" class="headerlink" title="Vue-Router导航守卫："></a>Vue-Router导航守卫：</h2><p>有的时候，我们需要通过路由来进行一些操作，比如最常见的登录权限验证，当用户满足条件时，才让其进入导航，否则就取消跳转，并跳到登录页面让其登录。</p>
 <p>为此我们有很多种方法可以植入路由的导航过程：<strong>全局的, 单个路由独享的, 或者组件级的</strong>,推荐优先阅读<a href="https://link.juejin.cn?target=https%3A%2F%2Frouter.vuejs.org%2Fzh%2Fguide%2Fadvanced%2Fnavigation-guards.html" title="https://router.vuejs.org/zh/guide/advanced/navigation-guards.html" target="_blank" rel="noopener">路由文档</a></p>
@@ -734,6 +734,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2024/05/03/vue3-composition/" rel="prev" title="Vue 3 深入解析：Composition API vs Options API">
+                Vue 3 深入解析：Composition API vs Options API <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -797,7 +801,7 @@
               <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="weifo">
             
               <p class="site-author-name" itemprop="name">weifo</p>
-              <p class="site-description motion-element" itemprop="description">电音爱好者</p>
+              <p class="site-description motion-element" itemprop="description">行到水穷处，坐看云起时</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -807,7 +811,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-count">37</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -818,7 +822,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -829,7 +833,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">19</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -899,7 +903,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2022</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2025</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
