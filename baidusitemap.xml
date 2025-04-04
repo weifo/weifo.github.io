@@ -1,8 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://weifo.github.io/2024/09/16/typeScriptTips2/</loc>
+    <lastmod>2025-04-04</lastmod>
+  </url>
+  <url>
+    <loc>https://weifo.github.io/2024/08/16/performance2/</loc>
+    <lastmod>2025-04-04</lastmod>
+  </url>
+  <url>
+    <loc>https://weifo.github.io/2024/08/12/frontendTest/</loc>
+    <lastmod>2025-04-04</lastmod>
+  </url>
+  <url>
+    <loc>https://weifo.github.io/2024/07/22/microFrontend/</loc>
+    <lastmod>2025-04-04</lastmod>
+  </url>
+  <url>
+    <loc>https://weifo.github.io/2024/07/14/web-security/</loc>
+    <lastmod>2025-04-04</lastmod>
+  </url>
+  <url>
+    <loc>https://weifo.github.io/2024/06/24/vue3Features/</loc>
+    <lastmod>2025-04-04</lastmod>
+  </url>
+  <url>
+    <loc>https://weifo.github.io/2024/06/14/fontend-performance/</loc>
+    <lastmod>2025-04-04</lastmod>
+  </url>
+  <url>
+    <loc>https://weifo.github.io/2024/05/18/typescriptTips/</loc>
+    <lastmod>2025-04-04</lastmod>
+  </url>
+  <url>
+    <loc>https://weifo.github.io/2024/05/12/react18Features/</loc>
+    <lastmod>2025-04-04</lastmod>
+  </url>
+  <url>
+    <loc>https://weifo.github.io/2024/05/03/vue3-composition/</loc>
+    <lastmod>2025-04-04</lastmod>
+  </url>
+  <url>
     <loc>https://weifo.github.io/2022/05/05/keep-alive/</loc>
-    <lastmod>2022-06-07</lastmod>
+    <lastmod>2025-03-23</lastmod>
   </url>
   <url>
     <loc>https://weifo.github.io/2022/05/03/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E7%AE%80%E4%BB%8B/</loc>

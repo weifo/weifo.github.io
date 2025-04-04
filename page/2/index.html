@@ -81,17 +81,17 @@
 
 
 
-<meta name="description" content="电音爱好者">
+<meta name="description" content="行到水穷处，坐看云起时">
 <meta name="keywords" content="读书 旅行">
 <meta property="og:type" content="website">
 <meta property="og:title" content="weifo">
 <meta property="og:url" content="https://weifo.github.io/page/2/index.html">
 <meta property="og:site_name" content="weifo">
-<meta property="og:description" content="电音爱好者">
+<meta property="og:description" content="行到水穷处，坐看云起时">
 <meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="weifo">
-<meta name="twitter:description" content="电音爱好者">
+<meta name="twitter:description" content="行到水穷处，坐看云起时">
 
 
 
@@ -273,6 +273,1556 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://weifo.github.io/2020/01/21/es6-map&set/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="weifo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="weifo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/01/21/es6-map&set/" itemprop="url">ES6 - Map 和 Set</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-21T09:07:08+08:00">
+                2020-01-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Javascript/" itemprop="url" rel="index">
+                    <span itemprop="name">Javascript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="Map-和-Set"><a href="#Map-和-Set" class="headerlink" title="Map 和 Set"></a>Map 和 Set</h2><p>JavaScript 的默认对象表示方式<code>{}</code>可以视为其他语言中的<code>Map</code>或<code>Dictionary</code>的数据结构，即一组键值对。</p>
+<p>但是 JavaScript 的对象有个小问题，就是键必须是字符串。但实际上 Number 或者其他数据类型作为键也是非常合理的。</p>
+<h3 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h3><p><code>Map</code>是一组键值对的结构，具有极快的查找速度。</p>
+<p>举个例子，假设要根据同学的名字查找对应的成绩，如果用<code>Array</code>实现，需要两个<code>Array</code>：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> names = [<span class="string">'Michael'</span>, <span class="string">'Bob'</span>, <span class="string">'Tracy'</span>]</span><br><span class="line"><span class="keyword">var</span> scores = [<span class="number">95</span>, <span class="number">75</span>, <span class="number">85</span>]</span><br></pre></td></tr></table></figure>
+<p>给定一个名字，要查找对应的成绩，就先要在 names 中找到对应的位置，再从 scores 取出对应的成绩，Array 越长，耗时越长。</p>
+<p>如果用 Map 实现，只需要一个“名字”-“成绩”的对照表，直接根据名字查找成绩，无论这个表有多大，查找速度都不会变慢。用 JavaScript 写一个 Map 如下：</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/01/21/es6-map&set/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://weifo.github.io/2020/01/20/es6-generator/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="weifo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="weifo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/01/20/es6-generator/" itemprop="url">ES6 - generator</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-20T11:24:35+08:00">
+                2020-01-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Javascript/" itemprop="url" rel="index">
+                    <span itemprop="name">Javascript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><blockquote>
+<p><code>Generator</code> 函数是 ES6 提供的一种异步编程解决方案。语法上，首先可以把它理解成，<code>Generator</code> 函数是一个状态机，封装了多个内部状态。</p>
+</blockquote>
+<p>形式上，<code>Generator</code> 函数是一个普通函数，但是有两个特征。一是，<code>function</code> 关键字与函数名之间有一个星号；二是，函数体内部使用 <code>yield</code> 表达式，定义不同的内部状态。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 该函数有三个状态：hello，world 和 return 语句（结束执行）</span></span><br><span class="line"><span class="function"><span class="keyword">function</span>* <span class="title">helloWorldGenerator</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">yield</span> <span class="string">'hello'</span></span><br><span class="line">  <span class="keyword">yield</span> <span class="string">'world'</span></span><br><span class="line">  <span class="keyword">return</span> <span class="string">'ending'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> hw = helloWorldGenerator()</span><br><span class="line"></span><br><span class="line"><span class="comment">// 只有调用 next() 函数才会执行</span></span><br><span class="line"></span><br><span class="line">hw.next() <span class="comment">// &#123; value: 'hello', done: false &#125;</span></span><br><span class="line">hw.next() <span class="comment">// &#123; value: 'world', done: false &#125;</span></span><br><span class="line">hw.next() <span class="comment">// &#123; value: 'ending', done: true &#125;</span></span><br><span class="line">hw.next() <span class="comment">// &#123; value: undefined, done: true &#125;</span></span><br><span class="line"></span><br><span class="line">hw <span class="comment">// &#123;&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// yield表达式如果用在另一个表达式之中，必须放在圆括号里面</span></span><br><span class="line"><span class="function"><span class="keyword">function</span>* <span class="title">demo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'Hello'</span> + <span class="keyword">yield</span>) <span class="comment">// SyntaxError</span></span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'Hello'</span> + <span class="keyword">yield</span> <span class="number">123</span>) <span class="comment">// SyntaxError</span></span><br><span class="line"></span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'Hello'</span> + (<span class="keyword">yield</span>)) <span class="comment">// OK</span></span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'Hello'</span> + (<span class="keyword">yield</span> <span class="number">123</span>)) <span class="comment">// OK</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>Generator</code> 函数的调用方法与普通函数一样，也是在函数名后面加上一对圆括号<br>不同的是，调用 <code>Generator</code> 函数后，该函数并不执行，返回的也不是函数运行结果，而是一个指向内部状态的指针对象</p>
+<p>总结一下：</p>
+<ul>
+<li>调用 <code>Generator</code> 函数，返回一个遍历器对象，代表 <code>Generator</code> 函数的内部指针。</li>
+<li>以后，每次调用遍历器对象的 next 方法，就会返回一个有着 <code>value</code> 和 <code>done</code> 两个属性的对象。<ul>
+<li><code>value</code> 属性表示当前的内部状态的值，是 yield 表达式后面那个表达式的值</li>
+<li><code>done</code> 属性是一个布尔值，表示是否遍历结束。</li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://weifo.github.io/2020/01/16/es6-class/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="weifo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="weifo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/01/16/es6-class/" itemprop="url">ES6 - Class</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-16T22:19:09+08:00">
+                2020-01-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Javascript/" itemprop="url" rel="index">
+                    <span itemprop="name">Javascript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>JavaScript 语言中，生成实例对象的传统方法是通过构造函数。下面是一个例子。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Point</span>(<span class="params">x, y</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.x = x</span><br><span class="line">  <span class="keyword">this</span>.y = y</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Point.prototype.toString = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="string">'('</span> + <span class="keyword">this</span>.x + <span class="string">', '</span> + <span class="keyword">this</span>.y + <span class="string">')'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> p = <span class="keyword">new</span> Point(<span class="number">1</span>, <span class="number">2</span>)</span><br></pre></td></tr></table></figure>
+<p>ES6 提供了更接近传统语言的写法，引入了 Class（类）这个概念，作为对象的模板。通过<code>class</code>关键字，可以定义类。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//定义类</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Point</span> </span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>(x, y) &#123;</span><br><span class="line">    <span class="keyword">this</span>.x = x <span class="comment">// this 代表实例对象</span></span><br><span class="line">    <span class="keyword">this</span>.y = y</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  toString() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">'('</span> + <span class="keyword">this</span>.x + <span class="string">', '</span> + <span class="keyword">this</span>.y + <span class="string">')'</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/01/16/es6-class/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://weifo.github.io/2020/01/12/es6-async&await/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="weifo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="weifo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/01/12/es6-async&await/" itemprop="url">ES6 - async await</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-12T12:02:26+08:00">
+                2020-01-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Javascript/" itemprop="url" rel="index">
+                    <span itemprop="name">Javascript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="async-函数"><a href="#async-函数" class="headerlink" title="async 函数"></a>async 函数</h2><blockquote>
+<p><code>async</code> 函数是什么？一句话，它就是 <code>Generator</code> 函数的语法糖。<code>async</code> 函数就是将 <code>Generator</code> 函数的星号（*）替换成 <code>async</code>，将 <code>yield</code> 替换成 <code>await</code>，仅此而已</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getSomething</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="string">'something'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">testAsync</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="string">'Hello async'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> v1 = <span class="keyword">await</span> getSomething() <span class="comment">// 普通值</span></span><br><span class="line">  <span class="keyword">const</span> v2 = <span class="keyword">await</span> testAsync() <span class="comment">// Promise对象</span></span><br><span class="line">  <span class="built_in">console</span>.log(v1, v2)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test()</span><br><span class="line">  .then(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'调用该函数时，会立即返回一个Promise对象'</span>)</span><br><span class="line">  &#125;)</span><br><span class="line">  .catch(<span class="function"><span class="params">e</span> =&gt;</span> &#123;&#125;)</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/01/12/es6-async&await/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://weifo.github.io/2020/01/06/vue-life-hooks/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="weifo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="weifo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/01/06/vue-life-hooks/" itemprop="url">Vue 生命周期</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-06T10:30:09+08:00">
+                2020-01-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Javascript/" itemprop="url" rel="index">
+                    <span itemprop="name">Javascript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="生命周期钩子函数"><a href="#生命周期钩子函数" class="headerlink" title="生命周期钩子函数"></a>生命周期钩子函数</h3><p><img src="https://weifo-blog.oss-cn-shanghai.aliyuncs.com/blog/vue-hooks.jpg?Expires=1584026727&amp;OSSAccessKeyId=TMP.3KiQHdpwZF97ctjftLMwdwGNk2VSmAh5U5sdi3TrDEqQErFtr7mpZgRU3m91HzzGK7xFLJqDd4MSPtyy1LrCqYWBrScgF4&amp;Signature=Sfn6HHcFvvQm9m%2BKG86w68hQa5w%3D" alt="default"></p>
+<p>解释：</p>
+<ul>
+<li>created阶段的ajax请求与mounted请求的区别：前者页面视图未出现，如果请求信息过多，页面会长时间处于白屏状态</li>
+<li>mounted 不会承诺所有的子组件也都一起被挂载。如果你希望等到整个视图都渲染完毕，可以用 <a href="https://cn.vuejs.org/v2/api/#vm-nextTick" target="_blank" rel="noopener">vm.$nextTick</a></li>
+</ul>
+<h3 id="单个组件生命周期"><a href="#单个组件生命周期" class="headerlink" title="单个组件生命周期"></a>单个组件生命周期</h3> <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"> <span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h3</span>&gt;</span>单组件<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">el-button</span> @<span class="attr">click</span>=<span class="string">"dataVar += 1"</span>&gt;</span>更新 &#123;&#123;dataVar&#125;&#125;<span class="tag">&lt;/<span class="name">el-button</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">el-button</span> @<span class="attr">click</span>=<span class="string">"handleDestroy"</span>&gt;</span>销毁<span class="tag">&lt;/<span class="name">el-button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"> <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript"> <span class="keyword">export</span> <span class="keyword">default</span> &#123;</span></span><br><span class="line">    data() &#123;</span><br><span class="line"><span class="javascript">        <span class="keyword">return</span> &#123;</span></span><br><span class="line">            dataVar: 1</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    beforeCreate() &#123;</span><br><span class="line"><span class="javascript">        <span class="keyword">this</span>.compName = <span class="string">'single'</span></span></span><br><span class="line"><span class="javascript">        <span class="built_in">console</span>.log(<span class="string">`--<span class="subst">$&#123;<span class="keyword">this</span>.compName&#125;</span>--beforeCreate`</span>)</span></span><br><span class="line">    &#125;,</span><br><span class="line">    created() &#123;</span><br><span class="line"><span class="javascript">        <span class="built_in">console</span>.log(<span class="string">`--<span class="subst">$&#123;<span class="keyword">this</span>.compName&#125;</span>--created`</span>)</span></span><br><span class="line">    &#125;,</span><br><span class="line">    beforeMount() &#123;</span><br><span class="line"><span class="javascript">        <span class="built_in">console</span>.log(<span class="string">`--<span class="subst">$&#123;<span class="keyword">this</span>.compName&#125;</span>--beforeMount`</span>)</span></span><br><span class="line">    &#125;,</span><br><span class="line">    mounted() &#123;</span><br><span class="line"><span class="javascript">        <span class="built_in">console</span>.log(<span class="string">`--<span class="subst">$&#123;<span class="keyword">this</span>.compName&#125;</span>--mounted`</span>)</span></span><br><span class="line">    &#125;,</span><br><span class="line">    beforeUpdate() &#123;</span><br><span class="line"><span class="javascript">        <span class="built_in">console</span>.log(<span class="string">`--<span class="subst">$&#123;<span class="keyword">this</span>.compName&#125;</span>--beforeUpdate`</span>)</span></span><br><span class="line">    &#125;,</span><br><span class="line">    updated() &#123;</span><br><span class="line"><span class="javascript">        <span class="built_in">console</span>.log(<span class="string">`--<span class="subst">$&#123;<span class="keyword">this</span>.compName&#125;</span>--updated`</span>)</span></span><br><span class="line">    &#125;,</span><br><span class="line">    beforeDestroy() &#123;</span><br><span class="line"><span class="javascript">        <span class="built_in">console</span>.log(<span class="string">`--<span class="subst">$&#123;<span class="keyword">this</span>.compName&#125;</span>--beforeDestroy`</span>)</span></span><br><span class="line">    &#125;,</span><br><span class="line">    destroyed() &#123;</span><br><span class="line"><span class="javascript">        <span class="built_in">console</span>.log(<span class="string">`--<span class="subst">$&#123;<span class="keyword">this</span>.compName&#125;</span>--destroyed`</span>)</span></span><br><span class="line">    &#125;,</span><br><span class="line">    methods: &#123;</span><br><span class="line">        handleDestroy() &#123;</span><br><span class="line"><span class="javascript">            <span class="keyword">this</span>.$destroy()</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>总结：</p>
+<ul>
+<li>初始化组件时，会执行beforeCreate/Created/beforeMount/mounted四个钩子函数</li>
+<li>当改变data中定义的变量（响应式变量）时，会执行beforeUpdate/updated钩子函数</li>
+<li>当切换组件（当前组件未缓存）时，会执行beforeDestory/destroyed钩子函数</li>
+<li>初始化和销毁时的生命钩子函数均只会执行一次，beforeUpdate/updated可多次执行</li>
+</ul>
+<h3 id="父子组件生命周期"><a href="#父子组件生命周期" class="headerlink" title="父子组件生命周期"></a>父子组件生命周期</h3>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://weifo.github.io/2020/01/03/copy/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="weifo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="weifo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/01/03/copy/" itemprop="url">Sequelize - 使用 model 查询数据</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-03T14:56:03+08:00">
+                2020-01-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Sequelize/" itemprop="url" rel="index">
+                    <span itemprop="name">Sequelize</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><code>Sequelize</code> 中有两种查询：使用 <code>Model</code>（模型）中的方法查询和使用 <code>sequelize.query()</code> 进行基于 SQL 语句的原始查询。</p>
+<p>下面是事先创建好的数据：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; select * <span class="keyword">from</span> users;</span><br><span class="line">+----+----------+------+------+-------+</span><br><span class="line">| id | name     | age  | sex  | score |</span><br><span class="line">+----+----------+------+------+-------+</span><br><span class="line">|  <span class="number">1</span> | guodada0 |   <span class="number">15</span> |    <span class="number">0</span> |    <span class="number">60</span> |</span><br><span class="line">|  <span class="number">2</span> | guodada1 |   <span class="number">16</span> |    <span class="number">1</span> |    <span class="number">80</span> |</span><br><span class="line">|  <span class="number">3</span> | guodada2 |   <span class="number">17</span> |    <span class="number">0</span> |    <span class="number">55</span> |</span><br><span class="line">|  <span class="number">4</span> | guodada3 |   <span class="number">18</span> |    <span class="number">1</span> |    <span class="number">87</span> |</span><br><span class="line">|  <span class="number">5</span> | guodada4 |   <span class="number">19</span> |    <span class="number">0</span> |    <span class="number">73</span> |</span><br><span class="line">|  <span class="number">6</span> | guodada5 |   <span class="number">20</span> |    <span class="number">1</span> |    <span class="number">22</span> |</span><br><span class="line">+----+----------+------+------+-------+</span><br><span class="line"><span class="number">6</span> rows <span class="keyword">in</span> <span class="keyword">set</span> (0.00 sec)</span><br></pre></td></tr></table></figure>
+<h2 id="findAll-搜索数据库中的多个元素"><a href="#findAll-搜索数据库中的多个元素" class="headerlink" title="findAll - 搜索数据库中的多个元素"></a>findAll - 搜索数据库中的多个元素</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> result = <span class="keyword">await</span> UserModel.findAll() <span class="comment">// result 将是所有 UserModel 实例的数组</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// the same as</span></span><br><span class="line"><span class="keyword">const</span> result = <span class="keyword">await</span> UserModel.all()</span><br><span class="line"></span><br><span class="line"><span class="comment">//...</span></span><br></pre></td></tr></table></figure>
+<h3 id="限制字段"><a href="#限制字段" class="headerlink" title="限制字段"></a>限制字段</h3><p>查询时，如果只需要查询模型的部分属性，可以在通过在查询选项中指定 <code>attributes</code> 实现。该选项是一个数组参数，在数组中指定要查询的属性即可，这些要查询的属性就表示要在数据库查询的字段：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Model.findAll(&#123;</span><br><span class="line">  attributes: [<span class="string">'foo'</span>, <span class="string">'bar'</span>]</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h3 id="字段重命名"><a href="#字段重命名" class="headerlink" title="字段重命名"></a>字段重命名</h3><p>查询属性（字段）可以通过传入一个嵌套数据进行重命名：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Model.findAll(&#123;</span><br><span class="line">  attributes: [<span class="string">'foo'</span>, [<span class="string">'bar'</span>, <span class="string">'baz'</span>]]</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// SELECT foo, bar AS baz ...</span></span><br></pre></td></tr></table></figure>
+<p>demo</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> results = <span class="keyword">await</span> UserModel.findAll(&#123;</span><br><span class="line">  attributes: [[<span class="string">'name'</span>, <span class="string">'username'</span>], <span class="string">'age'</span>, <span class="string">'score'</span>]</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// [&#123;"username":"guodada0","age":15,"score":60&#125;,&#123;"username":"guodada1","age":16,"score":80&#125; ...]</span></span><br><span class="line">ctx.body = results</span><br><span class="line"></span><br><span class="line"><span class="comment">// 访问查询结果 通过 instance.get('xxx')</span></span><br><span class="line"><span class="built_in">console</span>.log(results[<span class="number">0</span>][<span class="string">'username'</span>], results[<span class="number">0</span>].get(<span class="string">'username'</span>)) <span class="comment">// undefind, 'guodada0'</span></span><br></pre></td></tr></table></figure>
+<h3 id="通过-sequelize-fn-方法进行聚合查询"><a href="#通过-sequelize-fn-方法进行聚合查询" class="headerlink" title="通过 sequelize.fn 方法进行聚合查询"></a>通过 sequelize.fn 方法进行聚合查询</h3><h3 id="base-demo"><a href="#base-demo" class="headerlink" title="base demo"></a>base demo</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> UserModel = sequelize.define(<span class="string">'user'</span>, &#123;</span><br><span class="line">  name: Sequelize.STRING,</span><br><span class="line">  age: Sequelize.INTEGER,</span><br><span class="line">  sex: Sequelize.INTEGER,</span><br><span class="line">  score: Sequelize.INTEGER</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">sequelize.sync().then(<span class="keyword">async</span> () =&gt; &#123;</span><br><span class="line">  <span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> results = <span class="keyword">await</span> UserModel.findAll(&#123;</span><br><span class="line">      attributes: [<span class="string">'name'</span>, <span class="string">'age'</span>, <span class="string">'score'</span>]</span><br><span class="line">    &#125;)</span><br><span class="line">    results.map(<span class="function"><span class="params">user</span> =&gt;</span> &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(user.name, user.age, user.score) <span class="comment">// guodada0 15 60 | guodada1 16 80...</span></span><br><span class="line">    &#125;)</span><br><span class="line">  &#125; <span class="keyword">catch</span> (err) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(err)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// SELECT `name`, `age`, `score` FROM `users` AS `user`;</span></span><br></pre></td></tr></table></figure>
+<h3 id="通过-sequelize-fn-方法进行聚合查询-1"><a href="#通过-sequelize-fn-方法进行聚合查询-1" class="headerlink" title="通过 sequelize.fn 方法进行聚合查询"></a>通过 sequelize.fn 方法进行聚合查询</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Model.findAll(&#123;</span><br><span class="line">  attributes: [[sequelize.fn(<span class="string">'COUNT'</span>, sequelize.col(<span class="string">'hats'</span>)), <span class="string">'no_hats'</span>]]</span><br><span class="line">&#125;) <span class="comment">// SELECT COUNT(hats) AS no_hats ...</span></span><br></pre></td></tr></table></figure>
+<p>在使用聚合函数时，要给聚合字段指定一个别名。如，在上例中我们为聚合函数指定了别名<code>&#39;no_hats&#39;</code>，这样我们就能在查询的回调函数实例中通过 <code>instance.get(&#39;no_hats&#39;)</code>来访问聚合统计的结果。</p>
+<p>demo</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> results = <span class="keyword">await</span> UserModel.findAll(&#123;</span><br><span class="line">  attributes: [[sequelize.fn(<span class="string">'SUM'</span>, sequelize.col(<span class="string">'score'</span>)), <span class="string">'scoreSum'</span>]]</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(results[<span class="number">0</span>].get(<span class="string">'scoreSum'</span>)) <span class="comment">// 377</span></span><br></pre></td></tr></table></figure>
+<h3 id="include-exclude"><a href="#include-exclude" class="headerlink" title="include/exclude"></a>include/exclude</h3><p>当需要查询所有字段并对某一字段使用聚合查询时，而只需要以对象的形式传入 <code>attributes</code> 并添加 <code>include</code> 子属性即可。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 拽定全查询字段比较麻烦</span></span><br><span class="line">Model.findAll(&#123;</span><br><span class="line">  attributes: [<span class="string">'id'</span>, <span class="string">'foo'</span>, <span class="string">'bar'</span>, <span class="string">'baz'</span>, <span class="string">'quz'</span>, [sequelize.fn(<span class="string">'COUNT'</span>, sequelize.col(<span class="string">'hats'</span>)), <span class="string">'no_hats'</span>]]</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 这样会比较简短，且在你添加/删除属性后不会出错</span></span><br><span class="line">Model.findAll(&#123;</span><br><span class="line">  attributes: &#123; <span class="attr">include</span>: [[sequelize.fn(<span class="string">'COUNT'</span>, sequelize.col(<span class="string">'hats'</span>)), <span class="string">'no_hats'</span>]] &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// SELECT id, foo, bar, baz, quz, COUNT(hats) AS no_hats ...</span></span><br></pre></td></tr></table></figure>
+<p>全部查询时，可以通过 <code>exclude</code> 子属性来排除不需要查询的字段：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Model.findAll(&#123;</span><br><span class="line">  attributes: &#123; <span class="attr">exclude</span>: [<span class="string">'baz'</span>] &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// SELECT id, foo, bar, quz ...</span></span><br></pre></td></tr></table></figure>
+<h3 id="通过-sequelize-fn-方法进行聚合查询-2"><a href="#通过-sequelize-fn-方法进行聚合查询-2" class="headerlink" title="通过 sequelize.fn 方法进行聚合查询"></a>通过 sequelize.fn 方法进行聚合查询</h3>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://weifo.github.io/2019/12/12/随笔-如何用es6+写出优雅的js代码/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="weifo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="weifo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/12/12/随笔-如何用es6+写出优雅的js代码/" itemprop="url">随笔 - 如何用es6+写出优雅的js代码</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-12T09:59:21+08:00">
+                2019-12-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/开发随笔/" itemprop="url" rel="index">
+                    <span itemprop="name">开发随笔</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>兼容 IE ？不存在的好吗。</p>
+<p>其实使用新语法配合 <code>babel</code> 的转码，已经可以解决这一些问题了。既然如此，那就多使用新语法去探索一下怎么更好的去写代码吧。</p>
+<p>下面分享个人开发中常用的 js 写法技巧，希望对各位有所帮助。</p>
+<h2 id="使用-let-const"><a href="#使用-let-const" class="headerlink" title="使用 let / const"></a>使用 let / const</h2><p><code>var</code> 命令会发生”变量提升“现象，即变量可以在声明之前使用，值为 <code>undefined</code>。这种现象多多少少是有些奇怪的。</p>
+<p>个人认为，对声明的变量确定后面不会发生更改时，即使性能上没有太大提升差异在，但使用 <code>const</code>, 代码的可读性也会增强很多。</p>
+<ul>
+<li><code>const</code> 实际上保证的，并不是变量的值不得改动，而是变量指向的那个内存地址所保存的数据不得改动。</li>
+<li><code>let</code> 变量指向的内存地址，保存的只是一个指向实际数据的指针</li>
+</ul>
+<p>补充 <code>const</code> 定义的变量不是数据不可变，而是保存的引用地址不能发生改变。例子如下：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> person = &#123; <span class="attr">age</span>: <span class="number">22</span> &#125;</span><br><span class="line">person.age = <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(person.age) <span class="comment">// 1</span></span><br></pre></td></tr></table></figure>
+<p>详情看 <a href="http://es6.ruanyifeng.com/#docs/let" target="_blank" rel="noopener">let 和 const 命令</a></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/12/12/随笔-如何用es6+写出优雅的js代码/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://weifo.github.io/2019/11/14/ts_basic/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="weifo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="weifo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/11/14/ts_basic/" itemprop="url">五分钟了解(安装)typescript</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-14T23:05:08+08:00">
+                2019-11-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="typescript的由来"><a href="#typescript的由来" class="headerlink" title="typescript的由来"></a>typescript的由来</h2><p>typescript是由微软的一个技术团队开发和维护的一个开源项目，之所以会推出这个项目是为了解决js的一个缺陷吧！由于Javascript是一种<em>动态弱类型</em>的语言，在测试和debug阶段会非常的痛苦，也是为了解决这一“痛点”，微软的VS code团队推出了<strong>typescript</strong><br>&ensp; (强弱/动态静态具体解释，<a href="https://github.com/muwenzi/Program-Blog/issues/34" target="_blank" rel="noopener">click here!</a>)</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g typescript</span><br></pre></td></tr></table></figure>
+<p>安装后即可通过 <strong>tsc -v</strong> 命令行来查看安装版本，如果提示tsc不是内部或外部命令的话，说明系统的环境变量没有配置，csdn上有相关的解决办法。</p>
+<h3 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tsc xxx.ts</span><br></pre></td></tr></table></figure>
+<p>编译后会在相同文件夹下生成同名的js文件，关于更加工程化地使用typescript可以参考<a href="https://www.tslang.cn/samples/index.html" target="_blank" rel="noopener">官方文档</a></p>
+<h3 id="变量和函数声明"><a href="#变量和函数声明" class="headerlink" title="变量和函数声明"></a>变量和函数声明</h3><p>与js语法相比，在所有的变量加上类型<br><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> taylor:<span class="built_in">string</span>=<span class="string">'Taylor'</span>;</span><br><span class="line"><span class="keyword">let</span> age:<span class="built_in">number</span>=<span class="number">25</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 数组有两种定义方式</span></span><br><span class="line"><span class="keyword">let</span> skills:<span class="built_in">string</span>[]=[<span class="string">'sing'</span>,<span class="string">'gituar'</span>,<span class="string">'writing'</span>];</span><br><span class="line"><span class="keyword">let</span> cats:<span class="built_in">Array</span>&lt;<span class="built_in">string</span>&gt;=[<span class="string">'white'</span>,<span class="string">'dog'</span>,<span class="string">'miao'</span>];</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 函数声明</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">info</span>(<span class="params">name:<span class="built_in">string</span>,age:<span class="built_in">number</span></span>):<span class="title">string</span></span>&#123;</span><br><span class="line">    <span class="keyword">let</span> s:<span class="built_in">string</span>=<span class="string">''</span>;</span><br><span class="line">    s=<span class="string">`He is <span class="subst">$&#123;name&#125;</span>,and he's <span class="subst">$&#123;age&#125;</span> years old`</span>;</span><br><span class="line">    <span class="keyword">return</span> s;</span><br><span class="line">&#125;</span><br><span class="line">info(<span class="string">'calvin harris'</span>,<span class="number">28</span>)</span><br></pre></td></tr></table></figure></p>
+<h3 id="接口和类"><a href="#接口和类" class="headerlink" title="接口和类"></a>接口和类</h3><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 可选属性</span></span><br><span class="line"><span class="keyword">interface</span> employee&#123;</span><br><span class="line">    degree?:<span class="built_in">string</span>,</span><br><span class="line">    skilled?:<span class="built_in">boolean</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params">config:employee</span>):<span class="title">boolean</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(config.skilled)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span></span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(config.degree===<span class="string">'master'</span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span></span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> t1=test(&#123;degree:<span class="string">'master'</span>&#125;)</span><br><span class="line"><span class="keyword">let</span> t2=test(&#123;degree:<span class="string">'bachelor'</span>,skilled:<span class="string">'false'</span>&#125;)</span><br><span class="line"><span class="keyword">let</span> t3=test(&#123;skilled:<span class="string">'true'</span>&#125;)</span><br><span class="line"><span class="built_in">console</span>.log(t1,t2,t3)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 只读属性</span></span><br><span class="line"><span class="keyword">interface</span> Point&#123;</span><br><span class="line">    readonly x:<span class="built_in">number</span>,</span><br><span class="line">    readonly y:<span class="built_in">number</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> p1:Point=&#123;x:<span class="number">10</span>,y:<span class="number">5</span>&#125;</span><br><span class="line">p1.y=<span class="number">12</span></span><br><span class="line"><span class="comment">// error</span></span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://weifo.github.io/2019/11/14/deepclone/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="weifo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="weifo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/11/14/deepclone/" itemprop="url">包学不会的深拷贝与浅拷贝</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-14T22:13:05+08:00">
+                2019-11-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端开发/" itemprop="url" rel="index">
+                    <span itemprop="name">前端开发</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="深拷贝与浅拷贝的含义"><a href="#深拷贝与浅拷贝的含义" class="headerlink" title="深拷贝与浅拷贝的含义"></a>深拷贝与浅拷贝的含义</h2><p>首先要知道在js的世界中，有两种类型的值，分别是基础类型和引用类型。基础类型包括<strong>string,number,boolean,Symbol,undefined,null</strong>,引用类型包括<strong>array,object</strong>等。</p>
+<ul>
+<li>基本数据类型：直接存储在栈（stack）中的数据</li>
+<li>引用数据类型：在栈中存放的是指针，真实的数据存放在堆中。</li>
+</ul>
+<p><strong>首先要分清拷贝和赋值的区别</strong><br>引用类型的赋值是直接赋值了一个指针，二者指向相同的数据内存。而拷贝是要创建一个新的对象/数组，如果只拷贝一层数据的话叫浅拷贝，如果拷贝多层数据叫深拷贝。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> obj=&#123;</span><br><span class="line">    name:<span class="string">'Mike'</span>,</span><br><span class="line">    age:<span class="number">36</span>,</span><br><span class="line">    hobby:[<span class="string">'movies'</span>,<span class="string">'music'</span>,<span class="string">'running'</span>]</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 这是赋值,任何一个都能操作共有的内存数据</span></span><br><span class="line"><span class="keyword">let</span> obj1=obj;</span><br><span class="line">obj1.name=<span class="string">'fred'</span>;</span><br><span class="line">obj1.hobby[<span class="number">1</span>]=<span class="string">'eat'</span>;</span><br><span class="line"><span class="built_in">console</span>.log(obj,obj1)；</span><br><span class="line"></span><br><span class="line"><span class="comment">// 这是浅拷贝,只能拷贝一层数据，当对象中有引用类型的value时，只会拷贝这个引用的指针</span></span><br><span class="line"><span class="keyword">let</span> obj2=&#123;...obj&#125;;</span><br><span class="line">obj2.name=<span class="string">'max'</span>;<span class="comment">//不会改变源对象</span></span><br><span class="line">obj2.hobby[<span class="number">1</span>]=<span class="string">'sleep'</span>; <span class="comment">//会改变源对象</span></span><br><span class="line"><span class="built_in">console</span>.log(obj,obj2)</span><br></pre></td></tr></table></figure>
+<h2 id="如何实现浅拷贝"><a href="#如何实现浅拷贝" class="headerlink" title="如何实现浅拷贝"></a>如何实现浅拷贝</h2><h4 id="数组的浅拷贝"><a href="#数组的浅拷贝" class="headerlink" title="数组的浅拷贝"></a>数组的浅拷贝</h4><ul>
+<li><p>slice方法</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr=[<span class="number">1</span>,<span class="number">5</span>,<span class="number">9</span>],</span><br><span class="line">    arr1=arr.slice();</span><br><span class="line">arr1.push(<span class="number">11</span>);</span><br><span class="line"><span class="built_in">console</span>.log(arr,arr1)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>concat方法,当不给concat传参时，该方法和slice()作用相同</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr1=arr.concat();</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>spread操作符</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr=[<span class="number">1</span>,<span class="number">3</span>,<span class="number">5</span>,[<span class="number">8</span>,<span class="number">9</span>]];</span><br><span class="line"><span class="keyword">let</span> arr1=[...arr];</span><br><span class="line">arr.push(<span class="number">15</span>);</span><br><span class="line"><span class="built_in">console</span>.log(arr,arr1);</span><br><span class="line">arr1[<span class="number">3</span>].push(<span class="number">18</span>);</span><br><span class="line"><span class="built_in">console</span>.log(arr,arr1);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="对象的浅拷贝"><a href="#对象的浅拷贝" class="headerlink" title="对象的浅拷贝"></a>对象的浅拷贝</h4><ul>
+<li><p>手动实现</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">shallowCopy</span>(<span class="params">src</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> target=&#123;&#125;;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">let</span> key <span class="keyword">in</span> src)&#123;</span><br><span class="line">        <span class="keyword">if</span>(src.hasOwnProperty(key))&#123;</span><br><span class="line">            target[key]=src[key];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> target</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// hasOwnProperty方法可以排除来自原型链上的属性</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Object.assign()</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> obj=&#123;<span class="attr">a</span>:&#123;<span class="attr">name</span>:<span class="string">'weifo'</span>,<span class="attr">age</span>:<span class="number">33</span>&#125;&#125;;</span><br><span class="line"><span class="keyword">let</span> copyobj=<span class="built_in">Object</span>.assign(&#123;&#125;,obj);</span><br><span class="line">copyobj.a.name=<span class="string">'curt'</span>;</span><br><span class="line">concole.log(obj.a.name);<span class="comment">//curt</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>spread</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> obj=&#123;<span class="attr">name</span>:<span class="string">'weifo'</span>,<span class="attr">skill</span>:[<span class="string">'english'</span>,<span class="string">'code'</span>]&#125;;</span><br><span class="line"><span class="keyword">let</span> copyobj=&#123;...obj,<span class="attr">name</span>:<span class="string">'fred'</span>&#125;;<span class="comment">//&#123;name:'fred',skill:[...]&#125;</span></span><br><span class="line"><span class="comment">//es6语法</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="深拷贝的实现"><a href="#深拷贝的实现" class="headerlink" title="深拷贝的实现"></a>深拷贝的实现</h2><ul>
+<li><p>trick版</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">JSON</span>.parse(<span class="built_in">JSON</span>.stringify(obj))</span><br><span class="line"><span class="comment">// 该方法的局限性：symbol，undefined，函数的属性值会被忽略，例子如下</span></span><br><span class="line"><span class="keyword">let</span> syb=<span class="built_in">Symbol</span>(<span class="number">12</span>);</span><br><span class="line"><span class="keyword">let</span> obj=&#123;</span><br><span class="line">    name:<span class="string">'fred'</span>,</span><br><span class="line">    say:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        alert(<span class="string">'It wont alert'</span>);</span><br><span class="line">    &#125;,</span><br><span class="line">    syb:syb，</span><br><span class="line">    age:<span class="literal">undefined</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> copy=<span class="built_in">JSON</span>.parse(<span class="built_in">JSON</span>.stringify(obj));</span><br><span class="line"><span class="built_in">console</span>.log(copy);<span class="comment">//&#123;name:'fred'&#125;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>手动实现</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">deepclone</span>(<span class="params">src</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">typeof</span> src===<span class="string">'object'</span>)&#123;</span><br><span class="line">        <span class="keyword">let</span> clone=<span class="built_in">Array</span>.isArray(src)?[]:&#123;&#125;;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">let</span> key <span class="keyword">in</span> src)&#123;</span><br><span class="line">            clone[key]=deepclone(src[key]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> clone</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> src;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> test=&#123;</span><br><span class="line">    name:<span class="string">'fred'</span>,</span><br><span class="line">    cities:[<span class="string">'tokyo'</span>,<span class="string">'paris'</span>,<span class="string">'london'</span>]</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> clone=deepclone(test);</span><br><span class="line">clone.cities.push(<span class="string">'rome'</span>);</span><br><span class="line">clone.name=<span class="string">'weifo'</span>;</span><br><span class="line"><span class="built_in">console</span>.log(test,clone)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>解决循环引用<br>上面的方法可以满足大部分的应用场景了，除了遇到对象引用自身的情况，如果采用上面的方法，会有爆栈的错误提示。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> test=&#123;</span><br><span class="line">    name:<span class="string">'weifo'</span>,</span><br><span class="line">    field:[<span class="number">3</span>,<span class="number">5</span>,<span class="number">11</span>],</span><br><span class="line">    field1:&#123;</span><br><span class="line">        child:<span class="string">'name'</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">test.test=test;<span class="comment">//循环引用</span></span><br><span class="line">deepclone(test)<span class="comment">//RangeError</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>为了解决循环引用的问题，我们可以额外开辟一个存储空间，来存储当前对象和拷贝对象的对应关系，当需要拷贝对象时，先去存储对象中找，找到的话直接返回，没有则继续拷贝。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">deepclone</span>(<span class="params">target,map=new Map(</span>))</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">typeof</span> target===<span class="string">'object'</span>)&#123;</span><br><span class="line">        <span class="keyword">let</span> clone=<span class="built_in">Array</span>.isArray(src)?[]:&#123;&#125;;</span><br><span class="line">        <span class="keyword">if</span>(map.get(target))&#123;</span><br><span class="line">            <span class="keyword">return</span> target</span><br><span class="line">        &#125;</span><br><span class="line">        map.set(target,clone);</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">let</span> key <span class="keyword">in</span> target)&#123;</span><br><span class="line">            clone[key]=clone(target[key],map);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> clone</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> target</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>使用lodash<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> _=<span class="built_in">require</span>(<span class="string">'lodash'</span>);</span><br><span class="line"><span class="keyword">var</span> objects = [&#123; <span class="string">'a'</span>: <span class="number">1</span> &#125;, &#123; <span class="string">'b'</span>: <span class="number">2</span> &#125;];</span><br><span class="line"> </span><br><span class="line"><span class="keyword">var</span> deep = _.cloneDeep(objects);</span><br><span class="line"><span class="built_in">console</span>.log(deep[<span class="number">0</span>] === objects[<span class="number">0</span>]);<span class="comment">//false</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://weifo.github.io/2019/10/12/webpack-plugins/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="weifo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="weifo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/10/12/webpack-plugins/" itemprop="url">webpack-plugins</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-10-12T21:43:08+08:00">
+                2019-10-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/webpack/" itemprop="url" rel="index">
+                    <span itemprop="name">webpack</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="功能类"><a href="#功能类" class="headerlink" title="功能类"></a>功能类</h2><h3 id="html-webpack-plugin"><a href="#html-webpack-plugin" class="headerlink" title="html-webpack-plugin"></a>html-webpack-plugin</h3><ul>
+<li>把编译后的文件（css/js）插入到入口文件中，可以只指定某些文件插入，可以对 html 进行压缩等</li>
+<li><code>filename</code>：输出文件名；</li>
+<li><code>template</code>：模板文件，不局限于 html 后缀哦；</li>
+<li><code>removeComments</code>：移除 HTML 中的注释；</li>
+<li><code>collapseWhitespace</code>：删除空白符与换行符，整个文件会压成一行；</li>
+<li><code>inlineSource</code>：插入到 html 的 css、js 文件都要内联，即不是以 link、script 的形式引入；</li>
+<li><code>inject</code>：是否能注入内容到 输出 的页面去；</li>
+<li><code>chunks</code>：指定插入某些模块；</li>
+<li><code>hash</code>：每次会在插入的文件后面加上 hash ，用于处理缓存，如：；<br>其他：favicon、meta、title ……；</li>
+</ul>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/10/12/webpack-plugins/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -1367,7 +2917,7 @@
               <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="weifo">
             
               <p class="site-author-name" itemprop="name">weifo</p>
-              <p class="site-description motion-element" itemprop="description">电音爱好者</p>
+              <p class="site-description motion-element" itemprop="description">行到水穷处，坐看云起时</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -1377,7 +2927,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-count">37</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1388,7 +2938,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -1399,7 +2949,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">19</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -1453,7 +3003,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2022</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2025</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
